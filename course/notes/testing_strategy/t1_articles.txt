@@ -1,0 +1,15 @@
+Purpose:
+
+//pre condition:
+
+
+//post condition:
+
+
+Steps:
+
+
+(1) Clone the repo 
+https://github.com/CSCC01Fall2014/team01-Project
+
+(2)

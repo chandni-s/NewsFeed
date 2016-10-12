@@ -1,0 +1,76 @@
+Iteration Plan 1:
+
+For the user stories of this iteration, there are a few categories of tasks.
+1.  Adding/removing items to the database.
+2.  Keeping track of the items that are related to the database - ie. managing tables
+3.  Displaying lists of items
+4.  Parsing HTML files (articles) for references to sources
+
+The cost estimations for each task are seperated into a few parts:
+i) implementation of the function (.7 of a task)
+   -Database backend implementation (.3 of a task)
+   -UI frontend implementation and interaction with database (.4 of a task)
+ii) testing of the function (.3 of a task)
+
+
+Exploration Phase:
+
+1. Functions that involve adding and removing entries to the database require the following:
+a) database.add_item
+b) database.remove_item
+c) Also, implementation of the different classes are a prerequisite for these tasks
+
+This corresponds to each type of item that is required to be added into the database.
+(Source, Article, Reference classes)
+
+Furthermore, these programming tasks also require elements from the UI and server to be implemented
+d) Views for listing sources and articles
+e) Modification pages for sources and articles
+f) Interfaces for adding keywords and references
+
+In total, to implement these functions 6 * (.7) = 4.2
+
+2. To Keep track of lists of items, the following is required:
+a) database.intialize_tables
+
+The task to implement this will only require backend implementation inside the database: 6 * .7 = 4.2
+
+3. The following are required for displaying lists
+a) database.get_items
+
+From the UI and server backend:
+b) server.db_get_items
+c) server.render_views
+
+As only implementation of the display article and display reference requirements are being done, the cost required is: 3 * .7 = 2.1
+
+4. To locate references inside of an article, only the implementation of the algorithm needs to be done - there is no UI related components
+database.find_references(articles)
+
+The cost related to this task is 5 * 0.7 = 3.5
+
+Commitment Phase:
+For the implementation stages of the requirements, the tasks will be divided between:
+
+Dickson: 1abc, 3a - managing the database and accessing lists of entries
+Nick: 1cde, 3bc - Implementation of UI elements and server interaction
+Miranda: 4 - search algorithm for references in articles
+Chandni: 1c - implementation of the classes
+Amna: 2 - initializing proper database tables
+
+Steering Phase:
+Before implementation is complete, tests need to be written for each of the tasks described.
+
+Dickson: Testing whether getting lists of entries work or not
+Nick: Tests that check whether the UI works as intended or not
+Miranda: HTML parsing
+Chandni: Adding and removing functions
+Amna: Adding and removing functions
+
+Unit tests can be divided between different sets of functionalities based on the table that they interact with.
+For example, one unit test will test the interacting with the sources table, while another with the articles table.
+Testing UI and server elements will require testing if the acceptance criteria are met, and a sequences of operations can be written to see if the correct result occurred.
+
+Testing will cost 20 * 0.3 = 6 units of work.
+
+In total, the cost for this phase is 4.2 + 4.2 + 2.1 + 3.5 + 6 = 20 units.

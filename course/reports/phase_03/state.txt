@@ -1,0 +1,48 @@
+
+
+In the current iteration, the focus was on the user stories marked for completion. In sync with it, all of the
+user stories, save two, were completed.
+
+These are as follows:
+
+1.  Category sorting
+
+2.  Reference searching -
+This was split up into two user stories (with the first being completed in Iteration one)
+
+The new user stories include:
+
+a. Watch list of articles (and potentially sources)
+b. Data export (WARC)
+
+ 
+Additional fixes, (owing to the interview feedback) include:
+
+1.  Database error handling - (making the error messages more specific) 
+
+2.  Enhancing the UI intutiveness 
+
+3.  Making the data entry easier
+
+
+Fix Number 2 can be implemented via the user story:
+
+a.  As John (a researcher), I want to add a source into the application by specifying the url, so that I may track 
+articles from that source.
+
+
+Other user stories being worked on:
+
+1.  The second part of the reference searching user story 
+
+2.  Visualizations:
+
+      -Creation of a function to generate Network Visualizations
+
+      -Plot visualizations
+
+ 
+The functions in the database have been updated. These include the functions that had been completed in the previous 
+iteration.
+
+The UI is being contructed to support the above. The focus is also on developing the visualizations.

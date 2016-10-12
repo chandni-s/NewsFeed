@@ -1,0 +1,336 @@
+team01-Project/src/networkvisual.py (commit 2aaf6b4, branch Visual)
+
+== CORRECTNESS ==
+
+As of writing, Line 158 causes an exception because 'articles.source_id' in
+database.py should be 'articles.source_id' instead. This is likely fixed in
+the local copy, but is not fixed in the branch or master.
+
+Functions should be provided an imgname from server instead of construction
+such a name within the functions - the headers are incorrect and should
+be changed to accomodate this.
+
+The return values are not consistent throughout single functions - a function
+should only return one type of value.  In particular visual_arti_ref seems
+to suggest returning a string, but in the case that the article is not none,
+no string is returned.
+
+== DOCUMENTATION ==
+
+Label is misspelled frequently as lable.
+
+Line 18: It's not clear from my perspective as a developer what latour settings
+are.
+
+Line 39: The code is better documentation than the comments here. Consider
+grouping the lines under a single comment that discusses drawing the graph.
+
+Line 40. The code is better documentation than the comments here. Consider
+grouping the lines under a single comment that discusses saving/displaying
+the graph.
+
+Line 61, 148: There are two return formats, str and the tuple.
+
+Lines 65, 108, 153: The dictionary format isn't clear without inspecting the
+function.
+
+Line 103: PNG is not a class, or something that the function returns. The
+remaining documentation on return value doesn't make it clear what the
+function actually returns.
+
+== CODING STYLE ==
+
+Line 11: 
+
+Line 30: These if/else branches could be condensed into a dictionary with the
+function parameters as the values for the graph layout key.
+
+Line 58: The function returns a parameter verbatim as given. Consider not
+returning anything at all.
+
+Lines 95, 140, 209: This is a complex return value. The image name seems 
+unimportant, and it's not clear why it needs to return a dictionary. 
+If both need to be returned, it's better to just use a tuple too.
+
+Line 98, 143m 211: Return a bool instead of a string and let the calling 
+function decide what to do with the failure. Keep the return value consistent 
+with previous ones in the function.
+
+== CODING GUIDELINES ==
+
+The project follows PEP8. Below are the following compliance issues:
+
+Line 11:1: E302 expected 2 blank lines, found 1
+Line 11:43: E251 unexpected spaces around keyword / parameter equals
+Line 11:45: E251 unexpected spaces around keyword / parameter equals
+Line 11:64: W291 trailing whitespace
+Line 12:72: W291 trailing whitespace
+Line 13:69: W291 trailing whitespace
+Line 17:76: W291 trailing whitespace
+Line 19:1: W293 blank line contains whitespace
+Line 20:34: W291 trailing whitespace
+Line 23:6: E225 missing whitespace around operator
+Line 31:18: E225 missing whitespace around operator
+Line 33:18: E225 missing whitespace around operator
+Line 35:18: E225 missing whitespace around operator
+Line 37:18: E225 missing whitespace around operator
+Line 40:29: E231 missing whitespace after ','
+Line 40:39: E231 missing whitespace after ','
+Line 40:60: W291 trailing whitespace
+Line 43:29: E231 missing whitespace after ','
+Line 43:39: E231 missing whitespace after ','
+Line 43:46: E251 unexpected spaces around keyword / parameter equals
+Line 43:48: E251 unexpected spaces around keyword / parameter equals
+Line 43:53: E231 missing whitespace after ','
+Line 44:44: E231 missing whitespace after ','
+Line 46:41: E231 missing whitespace after ','
+Line 48:1: W293 blank line contains whitespace
+Line 50:20: E711 comparison to None should be 'if cond is not None:'
+Line 51:76: W291 trailing whitespace
+Line 53:1: W293 blank line contains whitespace
+Line 54:20: E261 at least two spaces before inline comment
+Line 54:53: W291 trailing whitespace
+Line 55:23: E261 at least two spaces before inline comment
+Line 56:39: E261 at least two spaces before inline comment
+Line 57:15: E261 at least two spaces before inline comment
+Line 60:1: E302 expected 2 blank lines, found 1
+Line 62:74: W291 trailing whitespace
+Line 64:1: W293 blank line contains whitespace
+Line 65:80: E501 line too long (83 > 79 characters)
+Line 69:1: W293 blank line contains whitespace
+Line 70:16: E711 comparison to None should be 'if cond is not None:'
+Line 74:50: W291 trailing whitespace
+Line 77:1: W293 blank line contains whitespace
+Line 81:1: W293 blank line contains whitespace
+Line 83:31: W291 trailing whitespace
+Line 85:1: W293 blank line contains whitespace
+Line 88:21: E231 missing whitespace after ','
+Line 88:46: W291 trailing whitespace
+Line 89:28: E231 missing whitespace after ','
+Line 91:28: E231 missing whitespace after ','
+Line 91:41: W291 trailing whitespace
+Line 92:1: W293 blank line contains whitespace
+Line 93:66: W291 trailing whitespace
+Line 96:1: W293 blank line contains whitespace
+Line 102:1: E303 too many blank lines (3)
+Line 104:80: E501 line too long (80 > 79 characters)
+Line 104:81: W291 trailing whitespace
+Line 105:80: E501 line too long (80 > 79 characters)
+Line 106:12: W291 trailing whitespace
+Line 107:1: W293 blank line contains whitespace
+Line 108:80: E501 line too long (83 > 79 characters)
+Line 109:8: W291 trailing whitespace
+Line 112:1: W293 blank line contains whitespace
+Line 113:15: E711 comparison to None should be 'if cond is not None:'
+Line 117:27: W291 trailing whitespace
+Line 118:61: W291 trailing whitespace
+Line 120:1: W293 blank line contains whitespace
+Line 123:26: W291 trailing whitespace
+Line 124:1: W293 blank line contains whitespace
+Line 128:44: W291 trailing whitespace
+Line 129:1: W293 blank line contains whitespace
+Line 131:36: W291 trailing whitespace
+Line 132:55: W291 trailing whitespace
+Line 135:50: W291 trailing whitespace
+Line 136:1: W293 blank line contains whitespace
+Line 137:66: W291 trailing whitespace
+Line 139:1: W293 blank line contains whitespace
+Line 144:1: W293 blank line contains whitespace
+Line 145:1: W293 blank line contains whitespace
+Line 146:1: W293 blank line contains whitespace
+Line 147:1: E303 too many blank lines (3)
+Line 149:80: E501 line too long (80 > 79 characters)
+Line 149:81: W291 trailing whitespace
+Line 150:76: W291 trailing whitespace
+Line 151:14: W291 trailing whitespace
+Line 152:1: W293 blank line contains whitespace
+Line 153:80: E501 line too long (83 > 79 characters)
+Line 154:8: W291 trailing whitespace
+Line 159:1: W293 blank line contains whitespace
+Line 160:18: E711 comparison to None should be 'if cond is not None:'
+Line 164:27: W291 trailing whitespace
+Line 165:1: W293 blank line contains whitespace
+Line 168:57: W291 trailing whitespace
+Line 170:28: W291 trailing whitespace
+Line 172:1: W293 blank line contains whitespace
+Line 173:27: E231 missing whitespace after ','
+Line 173:56: W291 trailing whitespace
+Line 174:38: E231 missing whitespace after ','
+Line 176:38: E231 missing whitespace after ','
+Line 177:1: W293 blank line contains whitespace
+Line 178:66: W291 trailing whitespace
+Line 180:1: W293 blank line contains whitespace
+Line 182:1: W293 blank line contains whitespace
+Line 184:48: W291 trailing whitespace
+Line 185:1: W293 blank line contains whitespace
+Line 186:1: W293 blank line contains whitespace
+Line 190:64: W291 trailing whitespace
+Line 194:15: E711 comparison to None should be 'if cond is not None:'
+Line 199:1: W293 blank line contains whitespace
+Line 201:27: W291 trailing whitespace
+Line 203:48: W291 trailing whitespace
+Line 204:28: E271 multiple spaces after keyword
+Line 204:48: W291 trailing whitespace
+Line 207:42: W291 trailing whitespace
+Line 208:1: W293 blank line contains whitespace
+Line 212:1: W293 blank line contains whitespace
+Line 213:1: W293 blank line contains whitespace
+Line 216:23: W291 trailing whitespace
+Line 217:41: W291 trailing whitespace
+Line 219:1: W293 blank line contains whitespace
+Line 222:1: W293 blank line contains whitespace
+Line 225:1: W293 blank line contains whitespace
+Line 228:1: W293 blank line contains whitespace
+Line 230:36: W291 trailing whitespace
+Line 231:1: W293 blank line contains whitespace
+Line 233:38: W291 trailing whitespace
+Line 234:1: W293 blank line contains whitespace
+Line 235:5: E265 block comment should start with '# '
+Line 236:80: E501 line too long (114 > 79 characters)
+Line 236:115: W291 trailing whitespace
+Line 237:30: E128 continuation line under-indented for visual indent
+Line 237:42: W291 trailing whitespace
+Line 238:30: E128 continuation line under-indented for visual indent
+Line 238:43: W291 trailing whitespace
+Line 239:30: E128 continuation line under-indented for visual indent
+Line 240:1: W293 blank line contains whitespace
+Line 241:80: E501 line too long (114 > 79 characters)
+Line 241:115: W291 trailing whitespace
+Line 242:30: E128 continuation line under-indented for visual indent
+Line 242:42: W291 trailing whitespace
+Line 243:30: E128 continuation line under-indented for visual indent
+Line 243:43: W291 trailing whitespace
+Line 244:30: E128 continuation line under-indented for visual indent
+Line 245:1: W293 blank line contains whitespace
+Line 246:80: E501 line too long (114 > 79 characters)
+Line 246:115: W291 trailing whitespace
+Line 247:30: E128 continuation line under-indented for visual indent
+Line 247:42: W291 trailing whitespace
+Line 248:30: E128 continuation line under-indented for visual indent
+Line 248:43: W291 trailing whitespace
+Line 249:30: E128 continuation line under-indented for visual indent
+Line 249:44: W291 trailing whitespace
+Line 250:1: W293 blank line contains whitespace
+Line 251:80: E501 line too long (114 > 79 characters)
+Line 251:115: W291 trailing whitespace
+Line 252:30: E128 continuation line under-indented for visual indent
+Line 252:42: W291 trailing whitespace
+Line 253:30: E128 continuation line under-indented for visual indent
+Line 253:43: W291 trailing whitespace
+Line 254:30: E128 continuation line under-indented for visual indent
+Line 254:44: W291 trailing whitespace
+Line 255:1: W293 blank line contains whitespace
+Line 256:80: E501 line too long (114 > 79 characters)
+Line 256:115: W291 trailing whitespace
+Line 257:30: E128 continuation line under-indented for visual indent
+Line 257:42: W291 trailing whitespace
+Line 258:30: E128 continuation line under-indented for visual indent
+Line 258:43: W291 trailing whitespace
+Line 259:30: E128 continuation line under-indented for visual indent
+Line 259:44: W291 trailing whitespace
+Line 260:1: W293 blank line contains whitespace
+Line 261:5: E265 block comment should start with '# '
+Line 263:1: W293 blank line contains whitespace
+Line 264:5: E303 too many blank lines (2)
+Line 264:80: E501 line too long (113 > 79 characters)
+Line 264:114: W291 trailing whitespace
+Line 265:30: E128 continuation line under-indented for visual indent
+Line 265:42: W291 trailing whitespace
+Line 266:30: E128 continuation line under-indented for visual indent
+Line 266:43: W291 trailing whitespace
+Line 267:30: E128 continuation line under-indented for visual indent
+Line 268:1: W293 blank line contains whitespace
+Line 269:80: E501 line too long (119 > 79 characters)
+Line 269:120: W291 trailing whitespace
+Line 270:30: E128 continuation line under-indented for visual indent
+Line 270:42: W291 trailing whitespace
+Line 271:30: E128 continuation line under-indented for visual indent
+Line 271:43: W291 trailing whitespace
+Line 272:30: E128 continuation line under-indented for visual indent
+Line 273:1: W293 blank line contains whitespace
+Line 274:80: E501 line too long (118 > 79 characters)
+Line 274:119: W291 trailing whitespace
+Line 275:30: E128 continuation line under-indented for visual indent
+Line 275:42: W291 trailing whitespace
+Line 276:30: E128 continuation line under-indented for visual indent
+Line 276:43: W291 trailing whitespace
+Line 277:30: E128 continuation line under-indented for visual indent
+Line 277:44: W291 trailing whitespace
+Line 278:1: W293 blank line contains whitespace
+Line 279:80: E501 line too long (126 > 79 characters)
+Line 279:127: W291 trailing whitespace
+Line 280:30: E128 continuation line under-indented for visual indent
+Line 280:42: W291 trailing whitespace
+Line 281:30: E128 continuation line under-indented for visual indent
+Line 281:43: W291 trailing whitespace
+Line 282:30: E128 continuation line under-indented for visual indent
+Line 282:44: W291 trailing whitespace
+Line 283:1: W293 blank line contains whitespace
+Line 284:80: E501 line too long (115 > 79 characters)
+Line 284:116: W291 trailing whitespace
+Line 285:30: E128 continuation line under-indented for visual indent
+Line 285:42: W291 trailing whitespace
+Line 286:30: E128 continuation line under-indented for visual indent
+Line 286:43: W291 trailing whitespace
+Line 287:30: E128 continuation line under-indented for visual indent
+Line 287:44: W291 trailing whitespace
+Line 289:1: W293 blank line contains whitespace
+Line 290:1: W293 blank line contains whitespace
+Line 291:5: E303 too many blank lines (3)
+Line 304:44: W291 trailing whitespace
+Line 305:44: W291 trailing whitespace
+Line 309:44: W291 trailing whitespace
+Line 310:44: W291 trailing whitespace
+Line 311:45: W291 trailing whitespace
+Line 316:1: W293 blank line contains whitespace
+Line 318:1: W293 blank line contains whitespace
+Line 319:40: W291 trailing whitespace
+Line 325:1: W293 blank line contains whitespace
+Line 327:20: W291 trailing whitespace
+Line 328:1: W293 blank line contains whitespace
+Line 336:1: W293 blank line contains whitespace
+Line 338:20: W291 trailing whitespace
+Line 339:1: W293 blank line contains whitespace
+Line 340:53: W291 trailing whitespace
+Line 341:1: W293 blank line contains whitespace
+Line 343:1: W293 blank line contains whitespace
+Line 345:1: W293 blank line contains whitespace
+Line 351:1: W293 blank line contains whitespace
+Line 353:20: W291 trailing whitespace
+Line 354:8: W291 trailing whitespace
+Line 355:1: W293 blank line contains whitespace
+Line 356:1: W293 blank line contains whitespace
+Line 357:5: E303 too many blank lines (2)
+Line 362:1: W293 blank line contains whitespace
+Line 365:1: W293 blank line contains whitespace
+Line 368:1: W293 blank line contains whitespace
+Line 370:31: W291 trailing whitespace
+
+In addition, there are other consistency errors with the rest of the project,
+and recommended python style:
+
+Line 11: Underscores should be used in variable names of multiple words.
+Line 23: Uppercase variable name used instead of lowercase.
+Line 60: Function name should consist of complete english words, underscored
+Line 73: Underscores should be used in variable names of multiple words.
+Line 116: Underscores should be used in variable names of multiple words.
+Line 123: Underscores should be used in variable names of multiple words.
+Line 160: Unnecessary brackets.
+Line 170: Underscore should be used in variable name.
+Line 188: Double quotation marks should be used for docstring comments.
+
+== TESTING ==
+
+draw_graph can be tested by inspection, and has sample data and tests at
+the end of the file. It doesn't cover many cases.
+
+visual_arti_ref and visual_parent_source become more easily tested if the
+drawing component was split from the bodies of both. They aren't currently
+tested, but could tested thoroughly in the future.
+
+== SUMMARY ==
+
+In closing, there are numerous guideline compliance issues that need to be 
+addressed, and a few places where coding style could be improved. Testing
+is nearly non-existent at this point, and it's not clear from the code
+how the functions work as the data scales in size.

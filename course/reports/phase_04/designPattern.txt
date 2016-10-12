@@ -1,0 +1,15 @@
+Our system follows singleton design pattern throughout. Singleton
+design pattern occurs when the instantiation of a class has been restricted
+to one object. Such a class that uses this design in our system would be the
+Database class.
+
+The Server ensures that all classes that require Database would be able to 
+access this class.  For example, Server will be able to pass Database as a
+reference to NetworkVisual, Plot2D, or web to the functions that need it.
+
+Furthermore, there should be only ever one instance of Database inside the
+application; Server, at the beginning of run-time, will create only one
+instance of Database and there is no way to create another instance of it
+through any function call.
+
+Similar notions can be said about Server.

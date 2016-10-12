@@ -1,0 +1,95 @@
+team01-Project/src/server.py 
+(commit e60a154ce4a541f44dc7b2fc6283287c0f9c53bf, branch Master)
+
+== CORRECTNESS ==
+
+The delete functions on lines 118-165 do not work correctly because the
+database query delete will always return True regardless of whether the item
+is inside the database or not.  The second condition of the if statement
+will never be called - also because the user must select an item before 
+calling delete.
+
+On line 169, db_export_articles does not seem to do anything but return an
+empty string at the moment.
+
+All other functions seem to always have a return value; for example, in
+function get_db(), it will check if g has attribute db before trying to return
+it.
+
+Return values for database related functions seem to be correct; Response 
+always contains the correct results and correct msg's (eg. db_add_reference 
+on line 97-114).  The exception may be delete - as described above.
+
+From lines 47 to 60, it may be possible to allow the user to provide these 
+settings: the name of UPDATE_FREQUENCY on urls being watched and name of
+the database - in case the user wants multiple databases.
+
+
+== DOCUMENTATION ==
+
+The Response class is used throughout but no indication of how Response class
+is used is at all present in the document.  Lines 20-21 provide some insight 
+on why the Response class is being used, but does not provide how it is used.
+
+Similarly, Request is used everywhere, but is not explained.
+
+In particular, lines 92, 94, 109, 111-114, 124, 126 all return
+Response objects, but it is not obvious as to how Response could be used.
+
+Line 342: It is not immediately obvious as to what TldDomainNotFound, TldBadUrl
+exceptions are, and no comments indicate this.
+
+Similarly, line 375 is not an obvious exception handle.
+
+Docstrings seem to correspond and explain what the functions do; however,
+docstrings do not describe the correct return type - all functions fall under
+this category. 
+
+For example, the database related functions seem to return a Response
+object, but the docstrings describe a dictionary or sometimes a string being
+returned.
+
+== CODING STYLE ==
+
+Variable names and function names make sense.  
+
+There do not seem to be redundant variables.  
+
+In particular, there is a good use of initializing objects when returning them
+instead of creating a variable for the object and then returning it.  For 
+example, lines 109 and 111 all return a Response object and is returned as 
+soon as it is initialized.   
+
+== CODING GUIDELINES ==
+
+The project follows PEP8. No PEP8 errors appeared in the code, except for
+the following:
+
+Some variable names overshadow some names that have been defined already by
+the standard library.  In particular lines: 134, 136, 160, 162, 328, 329, 330, 
+333, 362 are all examples of where the variable name "id" is used when "id" is 
+used already.
+
+== TESTING ==
+
+At this commit, there has been no tests implemented for this UI; however, 
+tests involve sequences of actions that user takes.  Each sequence would
+consider different situations of how a user might want to use the system.
+
+For example,
+1.  Testing when the article is added, but the source has not been added yet.
+2.  Testing when the article is added, but the source has already been added.
+
+The test would then see if the correct output occurs in both sources
+and articles page of the UI.
+
+== SUMMARY ==
+
+Under normal uses of the system, the functions will always return correct
+values: the functions were extended to deal with conditions that were are
+not expected to occur - for example, delete does not normally occur on an
+item that may not exist,  but the function will deal with that.
+
+More documentation and comments should be provided.  In particular, some 
+information as to how Request and Response could be placed within the preface.
+Furthermore, docstrings should provide the correct return value.

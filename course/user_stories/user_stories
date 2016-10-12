@@ -1,0 +1,144 @@
+*** 01 *************************************************************************
+
+As John (a researcher), I want to manage sources, so that I can attribute
+an article to a source.
+
+Value:  10
+Cost:   1   
+
+*** 02 *************************************************************************
+
+As John (a researcher), I want to manage articles, so that I can use the
+article to assist with the research.
+
+Value:  10
+Cost:   1
+
+*** 03 *************************************************************************
+
+As John (a researcher), I want to manage references, so that the connections
+between articles and sources are managed.
+
+Value:  10
+Cost:   1
+
+*** 04 *************************************************************************
+
+As John (a researcher), I want to manage links, so that the connections
+between articles are managed.
+
+Value:  10
+Cost:   1
+
+*** 05 *************************************************************************
+
+As John (a researcher), I want to save and open my work, so that I do not have to
+re enter the data, and my work is accessible from anywhere.
+
+Value:  10
+Cost:   2
+
+*** 06 *************************************************************************
+
+As John (a researcher), I want to filter the list of articles by date, so that
+I can research the trends over time.
+
+Value: 9
+Cost: 2
+
+*** 07 *************************************************************************
+
+As John (a researcher), I want a graph visualization of references from a
+source to other sources, so that I can see what sources a source uses, and
+how often they are used.
+
+Value: 
+
+*** 08 *************************************************************************
+As John (a researcher), I want a bar graph that shows the reference amount of a 
+given target source by timeline, so that I can see the variantion 
+trends of how this target source uses reference. 
+Value: 7
+Cost: 2
+
+*** 09 *************************************************************************
+As John (a researcher), I want the reference-amount in a bar graph of how many reference 
+come from the sources in a given source list, so that I can analyze  the importance and 
+trend of the given reference sources.
+
+Value: 7
+Cost: 2
+
+*** 10 *************************************************************************
+As John (a researcher), I want multi-curve plots graph which show the 
+reference amount that come from every source in a given source list by timeline, 
+so that I can analyze those sources' popularities and their variantion trend.
+
+Value: 8
+Cost: 2
+
+*** 11 *************************************************************************
+As John (a researcher), I want to crawl the tweets for a given account URL, so
+that I can research the content of the tweets.
+
+*** 12 *************************************************************************
+As John (a researcher, I want to add a tweet to the database if it links to an
+existing article, so that I can access it in future research.
+
+*** 13 *************************************************************************
+As John (a researcher), I want to add a tweet to the database if it has a keyword
+that exists in the keywords table, so that I can access it in the future research.
+
+*** 14 *************************************************************************
+As John (a researcher), I want to archive the crawled articles, so that I am
+able to access it in future.
+
+*** 15 *************************************************************************
+
+*** 16 *************************************************************************
+
+*** 17 *************************************************************************
+
+*** 18 *************************************************************************
+
+*** 19 *************************************************************************
+
+*** 20 *************************************************************************
+
+*** 21 *************************************************************************
+
+*** 22 *************************************************************************
+
+*** 23 *************************************************************************
+
+*** 24 *************************************************************************
+
+*** 25 *************************************************************************
+
+*** 26 *************************************************************************
+
+*** 27 *************************************************************************
+
+*** 28 *************************************************************************
+
+*** 29 *************************************************************************
+
+*** 30 *************************************************************************
+
+*** 31 *************************************************************************
+
+*** 32 *************************************************************************
+
+*** 33 *************************************************************************
+
+*** 34 *************************************************************************
+
+*** 35 *************************************************************************
+
+*** 36 *************************************************************************
+
+*** 37 *************************************************************************
+
+*** 38 *************************************************************************
+
+*** 39 *************************************************************************

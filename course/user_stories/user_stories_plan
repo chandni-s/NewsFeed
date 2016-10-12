@@ -1,0 +1,75 @@
+== Plan ==
+
+Making the stories
+    - Business writes a story
+    - Business assigns a value to the story
+    - Development assigns a cost to the story
+    - If the cost is too large, then break up stories
+    - If the cost is too small, then merge the stories
+
+Making a release plan
+    - Business picks a release date 
+    - Developers estimate how many units of work can be completed
+      in that iteration. This estimate is based on their knowledge of the project/tasks
+    - Business picks those stories, where the costs add up to the chosen number
+
+== Cost ==
+
+Unit cost - one member of the team working on the project for a day
+
+We have 5 members, so in a day, we have 5 units of work that can be done.
+But we are not working every day, so we expect to only have 3 days of the week to work on the project.
+
+5 units per day * 3 days per week = 15 units of work per week.
+
+== Goals for the application ==
+
+John 
+
+02. Modify sources, article, references, links, keywords.
+03. Visualizations.
+04. Filtering data.
+05. Automatic search for references and links within an article's content.
+06. Importing and exporting database?
+
+Jessica
+
+07. Exporting data to library format.
+08. Categorizing data.
+09. Saving article content.
+10. Account system.
+
+Candice
+
+11. Accessing the software from the web.
+12. Restrictions on data sharing?
+13. More visualizations??
+
+Value: 1 - 10.
+
+
+Visualizations:
+    graphs:
+        references between sources (with the number of references in between)
+            -the "big" picture
+        
+        a source and its references to other sources (with number of references in between)
+
+        an article and links to other articles, and references to sources
+        
+        articles, references, links, sources
+            -either display articles that exist within a source with nodes or
+            -display the name of the articles with another way (text box)
+        an article and references to sources (lower)
+        an article linked from other articles (low priority)
+        [The above three is combined]
+
+    plots:
+        article with links over time
+        sources with references to another source over time
+        sources with references to a subset of sources over time ??
+
+    pie charts:
+        number of articles for subset of authors?
+        
+    

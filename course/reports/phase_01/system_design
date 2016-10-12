@@ -1,0 +1,66 @@
+System Design
+
+The software manages a collection of articles, published by sources, and the links and references between
+them. The user can input sources, articles, and can add links and references. The managed articles can be
+categorized to filter and find specific content. With the managed data, it creates visual representations of the 
+links and references.
+
+The main components of the software are:
+	1. The database that stores the source entries and article entries, each of which may contain different
+	types of data.
+	2. The interface that allows the user to load from a database, modify the database by adding new sources
+	and articles.
+
+The interface also allows for a variety of visualizations to be created from the data stored.
+In the system, the user must interact with the interface and specify sources and articles. The interface will
+then find connections and store both the sources/articles and connections that it has found into
+the database.
+
+
+System Metaphor
+
+Every store has a list of different groups of consumers that often buy from the store, from the elderly to the
+hip young kids (which is a very basic example). However, every group of consumers also visit different types
+of stores.
+
+A company hires an analyst to understand these relationships - the company will tell the analyst exactly
+which groups of consumers the company is interested in and will also specify which stores (whose consumer
+traffic) are particularly of interest to the company.
+The analyst will then research a store, taking note of the consumer groups that are of interest to the company.
+
+Sources
+We liken the sources of information (that we want to analyze) to be the different stores. We expect that a
+certain consumer group will likely visit many stores - just like how an article may contain many references
+to sources.
+We can also draw connections between two stores if they happen to have the same consumer groups visit
+them - just like how we draw connections between sources of information if there is an article from one source
+that references from another. Information about stores is stored inside the filing cabinet (database).
+
+Articles
+We liken the articles to be different consumer groups. Different consumer groups visit different stores -
+similar to how different articles make references to different sources. Information about consumer groups is
+stored inside the filing cabinet (database).
+
+User
+The company is the user, providing a list of sources (consumer groups), and articles to analyze (stores). The
+company interacts with the analyst.
+
+
+Analyst
+	- The analyst is similar to the interface - it is whom the company (user) interacts with.
+	- The analyst is responsible for interpreting information from the company (similar to how the interface
+	interprets user input).
+	- The analyst will seemingly "analyse" the relationships between the consumer groups and the stores
+	(similar to how the connections between articles and references just appear on screen for the user to
+	see when they give input).
+	- The analyst is responsible for keeping a filing cabinet (or of the sort) to keep track of which consumer
+	groups and stores the company wants to look at (like how the interface will interact with the database).
+	- The analyst is also responsible for presenting visualizations of the data that he has collected to the
+	company, depending on what visualizations the company would like to see. (just like how the user can
+	choose from a few visualisations)
+	- The analyst will interact with the company (the user) and keep track of information with his filing
+	cabinet (database).
+
+Database
+What the analyst uses to keep track of all the consumer groups and the stores that the company provided
+and all of the information that he has researched.(It could be a filing cabinet).

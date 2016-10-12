@@ -1,0 +1,98 @@
+team01-Project/src/plot2d.py
+- commit cb3dd42fdf2da162f9c4ebe026c07d0f53ef71cb, branch Master
+- https://github.com/CSCC01Fall2014/team01-Project/commit/
+  cb3dd42fdf2da162f9c4ebe026c07d0f53ef71cb
+  
+== CORRECTNESS ==
+
+Below are the following issues in program correctness determined from
+inspection:
+
+Line 33: fig is a new figure, so it should be plt.figure().
+
+Line 40: Width of each bar is determined by the number of sources given in
+the original function, but the graph will only display the names it got in
+get_graph_information:
+
+len(names) is not necessarily equal to len(sources).
+
+Line 88: fig is a new figure, so it should be plt.figure().
+
+Line 157: info may be returned as an empty dictionary if the source wasn't
+found in the database, which leads to...
+
+Line 175: info["name"] may not exist.
+
+Line 178: info["references"] may not exist.
+
+Line 195: info["references"] may not exist.
+
+== DOCUMENTATION ==
+
+Comments within functions are generally informative enough, but the 
+docstrings need some work:
+
+Line 17: The docstring here doesn't describe what the function actually
+does. name is not a type, and list does not specify a specific list of
+anything (Are they source classes? Are they source ids?).
+
+Line 71: The docstring here doesn't describe what the function actually
+does. name is not a type, and list does not specify a specific list of
+anything (Are they source classes? Are they source ids?).
+
+Line 129: Should be more specific about what source actually is: an id.
+
+Line 160: The format of the tuple returned is uncodumented in the docstring.
+It shouldn't require going into the actual function implementation to
+determine what it is.
+
+== CODING STYLE ==
+
+Choice of most variable names are fine, and the code is generally structured in 
+a way that makes sense. However,
+
+Line 16: imgname should be img_name
+
+Line 30: style isn't used anywhere else in the function.
+
+Line 61: leg isn't used anywhere else in the function.
+
+Line 71: imgname should be img_name
+
+Line 157: Although the dictionary format is documented in the function's
+docstring, a class should be used here instead. 
+
+Line 202: Return values should be kept to being a single object, thing, etc.
+Complex return values are easy to make mistakes with, and index ordering
+requires inspection of the actual function.
+
+== CODING GUIDELINES ==
+
+The project follows PEP8. Below are the following compliance issues:
+
+plot2d.py:71:1: E302 expected 2 blank lines, found 1
+plot2d.py:349:31: W292 no newline at end of file
+
+== TESTING ==
+
+None at this time.
+
+No formal unit testing suite. Both plot_lines and plot_bars must be tested
+through visual inspection of the generated files (although testing whether
+the file was generated or not could be done).
+
+There are 3 examples for plot_lines, and 2 for plot_bars. These examples do
+not cover a wide variety of cases, and there are no examples for use with
+invalid data.
+
+Both get_references_to_source and get_graph_information are untested
+independently (plot_lines and plot_bars do indirectly test their correctness),
+but they should have unit test suites covering valid/invalid sources, source
+ids, and their returned data.
+
+== SUMMARY ==
+
+There are issues with program correctness that need to be addressed, along
+with better testing. Docstrings should also be improved to represent what
+the functions actually do in a higher level sense, and the functions should
+have their return types better documented.

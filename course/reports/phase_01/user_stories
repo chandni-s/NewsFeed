@@ -1,0 +1,455 @@
+User Stories
+Preface
+Throughout the document, there is frequent use of key concepts that the clients 
+want, and the software will work with. For clarity, they are defined below:
+- Source: A publisher of news media. Media can come in many forms - text, audio, 
+video, but media is not limited to just these examples. A source could be a 
+website, a blog, a Twitter account, a YouTube channel, or many other existing and
+emerging forms.
+- Keyword: A word or phrase associated with a source. For example, the 
+"Associated Press" is often referred to as "AP", and these are both keywords for
+the same source. The URL of the main page of a news article website could also be
+used as a Keyword to match sources from references.
+- Article: A news piece published by a source. Since sources publish many different
+forms of media, this could be an article on a website, a blog post, a Twitter 
+discussion, a video, a podcast, or anything else on the internet.
+- Tags: Information associated with an article - such as author, date, number of
+hits, etc [This will evolve as requirements for data formats and visualizations 
+evolve.
+- Link: A connection formed when an article cites an article from another source 
+directly. The connection is between two articles.
+- Reference: A connection formed when an article cites a source, either by citing
+an article from another source, or the name of the source. The connection is from 
+an article to another source.  References may not imply a link, as not all references
+(such as quotations) may not contain a link.
+- Visualization: A representation of stored data in the software. Lists, tables, 
+graphs, plots, pie charts, are a few examples of visualizations.
+
+The cost model will be explained in the release plan.
+Priorities are defined as following: 10 being the highest, and 1 being the lowest.
+User Stories
+1
+As John (a researcher), I want to be able to keep a list of articles (with 
+appropriate tags), so I can research the influence of certain articles and sources.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- Articles should contain the following information:
+		- Mandatory tags: URL, date, source
+		- Optional tags: name, author, "popularity" (links), etc (as 
+		requirements evolve)
+		- The URL should be unique.
+	- If a mandatory field is missing, the article should not be added.
+
+2
+As John (a researcher), I want to be able to keep a list of sources (with 
+appropriate keywords), so that I can research the influence of sources.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- Sources should contain the following information
+		- Mandatory Keyword: Name
+		- Optional Keyword: URL, aliases, etc (as requirements evolve)
+	- If a mandatory field is missing, the source should not be added.
+	- Keywords should be unique amongst all sources.
+
+3
+As John (a researcher), I want to be able to save changes to the list of articles
+and sources, so that I can retain the old data and continue from there.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- The user should be able to store data (save button).
+ Success: session is resumed next time the user logs in
+ Fail: display message
+	- Failed to save. Try again!"
+	- Previous session is corrupt."
+
+4
+As John (a researcher), I want to add a source to the application, so that I can
+research the influence of sources.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- User must add a name.
+ Success: perform the action chosen and display the message: "Source Added!"
+ Fail: display one the messages: "Name was used already, try a different source."
+
+5
+As John (a researcher), I want to remove a source from the application, so that 
+the I can manage my sources.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- User must include a keyword for a source in order to remove it.
+ Success: perform the action chosen and display the message: "Source Removed!"
+ Fail: display one the messages: "Keyword was not found; try again."
+
+6
+As John (a researcher), I want to change keywords associated with a source, so that
+I can research the influence of sources.
+Priority: 7
+Cost: 1
+Acceptance Tasks:
+	- Keywords can be used to match sources.
+	- Keywords need to be unique across sources.
+
+7
+As John (a researcher), I want to add an article to the application, so that I can 
+research the influence of sources in this article.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- There will be a Add button - upon clicking this one:
+		- user will be allowed to enter the article via browse button 
+		(upload article) or text box where they can copy and paste
+		- if the user wants to add an article, the tags associated 
+		(such as author, name, etc) would appear and the user can change them
+		- file/article size limit and support formats would appear
+ Success: display message "Changes saved"
+ Fail: display one of the messages below:
+	- "Failed to add article due to size limit exceed. Please try again!"
+	- "Failed to add article due to format. Please try again!"
+	- "Empty field. Please add article to modify"
+	- "Article already exists."
+
+8
+As John (a researcher), I want to remove an article from the application, so that
+I can manage the articles I am interested in.
+Priority: 9
+Cost: 1
+Acceptance Tasks:
+	- There will be a Remove button - upon clicking this one:
+		- User will be allowed to enter the article they want to remove
+ Success: display message "Article removed!"
+ Fail: display one of the messages below:
+	- "Failed to remove article. Please try again!"
+	- "Empty field. Please enter an article to remove"
+	- "Article does not exists. Please try again!"
+
+9
+As John (a researcher), I want to change the tags of an article in the application,
+so that I can research the influence of sources in this article (and to other 
+articles).
+Priority: 7
+Cost: 1
+Acceptance Tasks:
+	- There will be a Change button - upon clicking this one:
+		- User will be allowed to enter the article they want to remove
+		- User specicies which tag they want to change
+ Success: display message \Article Changed!"
+ Fail: display one of the messages below:
+	- "Failed to change an article. Please try again!"
+	- "Empty field. Please enter an article to change"
+	- "Article does not exists. Please try again!"
+
+10
+As John (a researcher), I want to keep track of a list of references made inside 
+an article, so I am able to analyse the different sources that the article is 
+influenced by.
+Priority: 10
+Cost: 1
+Acceptance Tasks:
+	- Each article should contain a list of references made to other sources.
+	- The source should be a source that was already included by the user.
+	- There should not be duplicates every time a reference is made inside 
+	the article to the source.
+
+
+11
+As John (a researcher), I want to be able to manually add references to an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: 8
+Cost: 1
+Acceptance Tasks:
+	- The user should be able to choose an article from a list.
+ Success: display the message:
+	- if added a reference: "Reference added"
+ Fail: display message:
+	- Source field empty. Reference cannot be added/unmodified."
+	- Source not found. Try again."
+
+12
+As John (a researcher), I want to be able to manually remove references from an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: 8
+Cost: 1
+Acceptance Tasks:
+	- The user should be able to choose an article from a list.
+ Success: display the message:
+	- if removed a reference: Reference removed
+ Fail: display message:
+	- Source not found. Try again."
+	- Source field empty. Reference cannot be removed/unmodified."
+
+13
+As John (a researcher), I want to be able to see a list of articles that a specific
+article links to, so that I can research the article.
+Priority: 8
+Cost: 1
+Acceptance Tasks:
+ Success - The "list of reference articles" can be shown after click the "reference 
+	list" button.
+	- If the list is not empty:
+		- Display list of links to other articles
+		- If there are multiple articles with the same name, user prompted
+		 with additional information about each article.
+ Failure - display message:
+	- "Sorry, no article is given, input article name/URL that you need."
+
+
+14
+As John (a researcher), I want to be able to search (for references and sources) 
+within the articles links (hyperlinks/web links) recursively, so that I can research
+more thoroughly.
+Priority: 10
+Cost: 5
+Acceptance Tasks:
+	- The user, whenever adding an article, needs to specify whether this 
+	automated searching occurs.
+	- Each link to another article can be searched recursively.
+	- Every reference to a source and every link to another article is saved.
+	- Each reference and link should be unique and never duplicated.
+
+15
+As John (a researcher), I want a display of the list of the references a source 
+makes to other sources, so that I can research the influence of different sources 
+and their relation to one another.
+Priority: 9
+Cost: 2
+Acceptance Tasks:
+	- The user is prompted for the source, and only sources specified can be 
+	displayed.
+ Success - A list of references is displayed.
+	- If the list is not empty: Each reference displays the name of the source
+ Failure - display message:
+	- "Sorry, no source is given, please input the sources as you need."
+	- "Sorry, this source cannot be parsed. Please check the source name/URL 
+	and try again."
+
+16
+As John (a researcher), I want a graph visualization of references from a
+source to other sources, so that I can analyse the references that are made in articles
+from a certain source.
+Value: 8
+Cost: 4
+Acceptance Tasks:
+ Success:
+	- A source to sources graph contains:
+		- each node represents a source
+		- every directed edge represents a reference inside an article made from one source 
+		to another
+	- If there are no correlations between articles/sources: there would be no
+	edges
+	- Edges could show the number of references made
+ Failure - display message:
+	- "Sorry, no source is given, please input the sources/articles 
+	as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check 
+	their names/URLs and try again."
+
+17
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of a specific article with the reference sources of this 
+article, so that I can see which kind of sources this article refers to.
+Priority: 6
+Cost: 3
+Acceptance Tasks:
+ Success
+	- An article to sources graph contains:
+		- each node represent either the article in question or the sources
+		- every directed edge would represent the reference the article makes to source
+	- If there are no correlations between articles/sources: there would be no edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check 
+	their names/URLs and try again."
+
+
+18
+As John (a researcher), I want a graph visualization of references made between
+different sources, so I can research the relationships between sources.
+Priority: 8
+Cost: 3
+Acceptance Tasks:
+ Success
+	- Nodes represent sources
+	- Edges represent references made from one source to another
+	- The number of references could be shown beside the edge
+ Failure
+	- "No sources were specified."
+
+19
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of related articles and sources, so that I can better my 
+understanding of the big picture of the public sphere.
+Priority: 6
+Cost: 4
+Acceptance Tasks:
+ Success
+	- A combined sources and articles graph contains:
+		- a larger node represents a source
+		- smaller nodes represents articles
+		- edges represent connections as described in the previous three types
+		- For every node which are only on the reference level(their 
+		reference are not shown completely on the graphical representation), 
+		we can set them as a core source(maybe by clicking the button) to
+		let the graphical representation show their references completely.
+	- If there are no correlations between articles/sources: there would be no edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check their 
+	names/URLs and try again."
+
+
+20
+As John (a researcher), I want to be able to see graphical representations 
+(2D line plots) of the number of references made to sources, so I can analyse the changes
+of popularity of sources over time.
+Priority: 8
+Cost: 4
+Acceptance Tasks:
+ Success
+	- On the graph, each curve represents one reference source site, labeled with sitename.
+	- Different curves should have different colors.
+	- The ordinate should be the frequency of the sources are referenced by.
+	- The abscissa should be the time line of the reference time.
+	- The abscissa time unit can be set to month(default), year, week and season.
+ Failure - display message:
+	- "Sorry, no source is given, please input the sources as you need."
+	- "Sorry, some of the sources cannot be parsed. Please check their 
+	names/URLs and try again."
+
+20A
+As John (a researcher), I want to be able to see graphical representations (bar graph)
+of the number of references made to a target list of sources, so I can analyse the changes
+of popularity of sources over time.
+Priority: 7
+Cost: 4
+Acceptance Tasks:
+ Success
+	- A coloured bar would represent the total number of references made to the list of sources.
+	- A white bar would represent the total number of references during a time period
+	- Abscissa would represent a given set of time periods
+	 
+ Failure - display message:
+	- "Sorry, no sources given, please input the sources as you need."
+	- "Sorry, some of the sources cannot be parsed. Please check their 
+	names/URLs and try again."
+
+21
+As Jessica (a librarian), I want to be able to store collections of news, 
+discussions, and articles, so it can be used in future references.
+Priority: 8
+Cost: 2
+Acceptance Tasks:
+	- Each entry should contain different information and can only be saved 
+	if the mandatory tags are there.
+	- The data format should be consistent throughout all entries.
+	- There should be enough data for each entry depending on which articles 
+	were referenced, but does not
+	contain anymore than that.
+	- The format should be compact, and organized in a reasonable way.
+
+22
+As Jessica (a librarian), I want to be able to categorize data by date, title, 
+or keywords/tags, so I can retrieve certain pieces faster.
+Priority: 8
+Cost: 2
+Acceptance Tasks:
+	- There will be three options for data categorization.
+		- Date
+		- Title
+		- Tags
+ Success: display message: "Data categorized successfully"
+	- data can be sorted by the category chosen;
+ Failed:
+	- data that cannot be sorted by the category will be listed separately - 
+	"The following was missing X" (X is the chosen sorting criteria)
+
+23
+As Jessica (a librarian), I want to be able to export data in a compatible format 
+(e.g. XML) to certain other software, so that the data will be accessible in 
+the future on any system.
+Priority: 7
+Cost: 3
+Acceptance Tasks:
+ 	- The data format will follow the requirements set out by the client as the project
+ 	evolves.
+ 	- Other software (perhaps visualization) will be able to use the database files.
+
+24
+As Jessica (a librarian), I want a login screen to authenticate and authorize 
+users, so that the data access is restricted and secure.
+Priority: 5
+Cost: 2
+Acceptance Tasks:
+ 	- There should be a login screen, to allow the users to input their credentials.
+ Success: display message: "Login successful" and "User authenticated"
+ Fail: display one of the below messages
+	- "Login failed. Please try again!"
+	- "Authentication failed. Please try again!"
+
+27
+As Candice (an educator), I want to be able to see table visualizations on 
+various categories, such as authors, source location, or references within 
+articles, so that I can have a comprehensive view of these articles.
+Priority: 4
+Cost: 2
+Acceptance Tasks:
+ Success:
+	- the top row indicates every reference sources name, and the right side 
+	column labels the time unit(month, year, week or season).
+	- User can set the time range manually
+	- The bottom row will show the amount cites time of each reference in 
+	the defined time range.
+ Failure - display message:
+	- "Category not specified."
+	- "Articles with this category do not exist"
+
+
+28
+As Candice (an educator), I want to be able to allow student level accounts to only
+view and access visualizations and queries, so that it will prevent unauthorized 
+changes to the database.
+Priority: 3
+Cost: 2
+Acceptance Tasks:
+	- An Educator login screen will have checkbox options to allow Import/Export data
+ Success:
+	- Checkmark on checkbox beside "Allow Import/Export data" will allow data sharing
+ Fail:
+	- if a student authenticator will try to import/export data - he/she will 
+	get message, "Error! Data Sharing not allowed. Please contact admin"
+
+
+29
+As Candice (an educator), I want to be able to export the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily 
+available to larger groups of people. 
+Priority: 6
+Cost: 4
+Acceptance Tasks:
+ Success for the users who have access to data sharing.
+	- Select export data: prompts user to save
+ Failure - display message:
+	- "Sorry, you don't have the access to this data. Please check with the administrator
+
+30
+As Candice (an educator), I want to be able to import the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily available 
+to larger groups of people.
+Priority: 6
+Cost: 4
+Acceptance Tasks:
+ Success for the users who have access of data sharing
+	- Select import data: set current database to data
+	- Indicate whether marked the data with data author.
+ Failure - display message:
+	- "Sorry, you don't have the access of this data. Please check with the 
+	administrator(with email address)."
+	- "Sorry, no data is selected to execute with, please select the data 
+	you need and do the operations again."
+	- "Sorry, your data type is incompatible, please check again."

@@ -1,0 +1,25 @@
+The release plan from the previous phase was completely rewritten to follow the standards of business protocol.
+Previously, the release plan was structured in a way so that programming requirements made more sense, rather than business requirements.
+
+However, now that the user stories have been put into order of priority, each user story is placed into one the the three phases (one of which is this current one), in order from priority.
+
+Moreover, although the previous costs (for user stories) were reasonable, the cost model itself was very strict and did not provide much flexibility.
+To elaborate, the current cost model assigns a cost based on the number of "programming days".  For this group, it was reasonable to assume that not all the group members would be working at the same time.
+Furthermore, it is reasonable that a programmer would only spend a few hours over a number of a days working on the project.
+
+Also, the original plan only consisted of three personas.  As such, another persona (the library programmer) was included during this phase's personas; consequently, some user stories were reorganized for different personas.
+
+
+In terms of issues that the group ran into during this phase:
+1.  The group had to decide in what way how the different classes interacted with one another.
+For example, because the interface-responsible class had to get information from the database-class, it was necessary that the proper
+information had to be relayed between the two.  How would the database class get its information and what kind of information would it return (and in what form)?
+
+2.  Another issue, which was prior to the previous, was deciding whether it was appropriate to use a web framework or a standard GUI interface.  There were pros and cons between the two choices;
+however, ultimately, the difficulty in implementing a GUI and the strengths of the group (database, web familiarity) steered the project towards the former direction.
+
+
+In terms of changes made to the iteration plan, this phase's requirements were mostly met.  
+In particular, there were issues involving categorization of data entries with the current design. 
+More time is needed to implement this user story, and thus, the cost is increased.
+[Nick, add something about breaking this story down into parts here]

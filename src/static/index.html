@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.datepicker.css" rel="stylesheet">
+    <link href="css/bootstrap.selectize.css" rel="stylesheet">
+    <link href="css/toastr.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:500|Open+Sans|Bree+Serif"
+    rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script src="js/debounce.js"></script>
+    <script src="js/datagrid.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/site.js"></script>
+</head>
+<body>
+
+<!-- Navigation for site views. -->
+<nav class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container">
+        <!-- Views dropdown -->
+        <div class="btn-group navbar-btn">
+
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#view-watchlist" data-toggle="tab">
+                        Watchlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#view-articles" data-toggle="tab">
+                        Articles
+                    </a>
+                </li>
+                <li>
+                    <a href="#view-sources" data-toggle="tab">
+                        Sources
+                    </a>
+                </li>
+                <li>
+                    <a href="#view-keywords" data-toggle="tab">
+                        Keywords
+                    </a>
+                </li>
+                <li>
+                    <a href="#view-visualize" data-toggle="tab">
+                        Visualize
+                    </a>
+                </li>
+                <li class="hide">
+                    <a href="#view-article-edit" data-toggle="tab"></a>
+                </li>
+                <li class="hide">
+                    <a href="#view-source-edit" data-toggle="tab"></a>
+                </li>
+                <li class="hide">
+                    <a href="#view-article-ref" data-toggle="tab"></a>
+                </li>
+                <li class="hide">
+                    <a href="#view-ref-select-article" data-toggle="tab"></a>
+                </li>
+                <li class="hide">
+                    <a href="#view-ref-select-source" data-toggle="tab"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- View container - fluid responsive grid. -->
+<div class="container">
+    <!-- Tabbed views. -->
+    <div class="tab-content">
+        <!-- Watchlist. -->
+        <div id="view-watchlist" class="tab-pane active">
+            <h3>Watchlist</h3>
+
+
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+
+                <div class="pad-above">
+                  <input id="search-watchlist"
+                         type="text"
+                         class="form-control"
+                         placeholder="Search URLs...">
+                </div>
+
+                <!-- Watchlist controls. -->
+                <div class="controls pad-below pad-above">
+                  <ul class="nav navbar-inverse nav-stacked ">
+
+                    <li class="btn"
+                            data-toggle="modal"
+                            data-target="#modal-watch-add">
+                        <a href="#">Add URL</a>
+                    </li>
+                    <li id="button-watch-delete" class="btn ">
+                        <a href="#">Delete URL</a>
+                    </li>
+                    <li id="button-watch-update" class="btn">
+                        <a href="#">Crawl watches </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Watchlist table. -->
+              <div class="col-md-9 col-sm-9 col-xs-9 pad-above">
+                <table id="table-watchlist"
+                       class="table table-condensed table-bordered table-responsive"
+                       width="100%">
+                    <thead>
+                      <tr>
+                          <th>URL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+
+        <!-- Articles. -->
+        <div id="view-articles" class="tab-pane">
+            <h3 id="articles-title">Articles</h3>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+
+                  <!-- Filter field. -->
+                  <div class="pad-above">
+                      <input id="search-articles"
+                             type="text"
+                             class="form-control"
+                             placeholder="Search articles...">
+                  </div>
+
+                  <!-- Article controls. -->
+                  <div class="controls pad-above pad-below">
+                    <ul class="nav navbar-inverse nav-stacked ">
+
+                      <li class="btn"
+                              data-toggle="modal"
+                              data-target="#modal-article-add">
+                          <a href="#">Add article</a>
+                      </li>
+                      <li id="button-article-delete" class="btn">
+                          <a href="#">Delete article</a>
+                      </li>
+                      <li id="button-article-edit" class="btn">
+                          <a href="#">Edit article</a>
+                      </li>
+                      <li id="button-article-ref" class="btn">
+                          <a href="#">Edit references</a>
+                      </li>
+                      <li id="button-article-refresh" class="btn">
+                          <a href="#">Refresh list</a>
+                      </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+
+              <div class="col-md-9 col-sm-9 pad-above">
+                <!-- Article table. -->
+                <table id="table-articles"
+                       class="table table-condensed table-bordered table-responsive"
+                       width="100%">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>URL</th>
+                            <th>Date</th>
+                            <th>Author</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+            				<tbody>
+            				</tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+
+        <!-- Sources. -->
+        <div id="view-sources" class="tab-pane">
+            <h3>Sources</h3>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+
+                  <!-- Filter field. -->
+                  <div class="pad-above">
+                      <input id="search-sources"
+                             type="text"
+                             class="form-control"
+                             placeholder="Search sources...">
+                  </div>
+
+                  <!-- Source controls. -->
+                  <div class="controls pad-above pad-below">
+                    <ul class="nav navbar-inverse nav-stacked ">
+                        <li id="button-source-add" class="btn">
+                            <a href="#">Add source</a>
+                        </li>
+                        <li id="button-source-delete" class="btn">
+                            <a href="#">Delete source</a>
+                        </li>
+                        <li id="button-source-refresh" class="btn">
+                            <a href="#">Refresh list</a>
+                        </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <div class="col-md-9 col-sm-9 pad-above">
+
+                  <!-- Source table. -->
+                  <table id="table-sources"
+                         class="table table-condensed table-bordered table-responsive"
+                         width="100%">
+                      <thead>
+                      <tr>
+                          <th>Name</th>
+                      </tr>
+                      </thead>
+        				      <tbody>
+  				            </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article editor. -->
+        <div id="view-article-edit" class="tab-pane">
+            <h3>Article Editor</h3>
+
+            <div class="form-horizontal">
+                <!-- Article title -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Title</label>
+                    <div class="col-sm-10">
+                        <input id="article-edit-title"
+                               type="text"
+                               class="form-control"
+                               placeholder="Title">
+                    </div>
+                </div>
+
+                <!-- Article URL -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">URL</label>
+                    <div class="col-sm-10">
+                        <input id="article-edit-url"
+                               type="text"
+                               class="form-control"
+                               placeholder="http://">
+                    </div>
+                </div>
+
+                <!-- Article date -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Date</label>
+                    <div class="col-sm-10">
+                        <input id="article-edit-date"
+                               type="text"
+                               class="datepicker form-control"
+                               placeholder="YYYY-MM-DD">
+                    </div>
+                </div>
+
+                <!-- Article author -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Author</label>
+                    <div class="col-sm-10">
+                        <input id="article-edit-author"
+                               type="text"
+                               class="form-control"
+                               placeholder="Author">
+                    </div>
+                </div>
+
+                <!-- Article tags -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Tags</label>
+                    <div class="col-sm-10">
+                        <input id="article-edit-tags"
+                               type="text"
+                               class="form-control"
+                               placeholder="world, politics, opinion, ...">
+                    </div>
+                </div>
+
+                <!-- Save button. -->
+                <div class="controls text-right">
+                    <button id="button-article-save" class="btn btn-primary">
+                        Save changes
+                    </button>
+                    <button class="button-article-cancel btn btn-default">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Source editor -->
+        <div id="view-source-edit" class="tab-pane">
+            <h3>Source Editor</h3>
+
+            <div class="form-horizontal">
+                <!-- Source URL -->
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">URL</label>
+                    <div class="col-sm-10">
+                        <input id="source-edit-url"
+                               type="text"
+                               class="form-control"
+                               placeholder="http://">
+                    </div>
+                </div>
+
+                <!-- Save button. -->
+                <div class="controls text-right">
+                    <button id="button-source-save" class="btn btn-primary">
+                        Save changes
+                    </button>
+                    <button id="button-source-cancel" class="btn btn-default">
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reference editor/viewer -->
+        <div id="view-article-ref" class="tab-pane">
+            <h3 id="ref-title">Reference Editor</h3>
+
+            <!-- Reference controls. -->
+            <div class="controls pad-below">
+                <button id="button-ref-add-article" class="btn btn-default">
+                    Add article
+                </button>
+                <button id="button-ref-add-source" class="btn btn-default">
+                    Add source
+                </button>
+                <button id="button-ref-delete" class="btn btn-default">
+                    Delete Reference
+                </button>
+            </div>
+
+            <!-- Reference table. -->
+            <table id="table-ref"
+                   class="table table-condensed table-bordered table-responsive"
+                   width="100%">
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!-- View controls. -->
+            <div class="controls text-right">
+                <button id="button-ref-close" class="btn btn-default">
+                    Close
+                </button>
+            </div>
+        </div>
+
+        <!-- Article selection for the reference editor. -->
+        <div id="view-ref-select-article" class="tab-pane">
+            <h3>Select article</h3>
+
+            <!-- Filter field. -->
+            <div class="pad-below">
+                <input id="ref-search-article"
+                       type="text"
+                       class="form-control"
+                       placeholder="Search articles...">
+            </div>
+
+            <!-- Article selection table. -->
+            <table id="table-ref-article"
+                   class="table table-condensed table-bordered table-responsive"
+                   width="100%">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>URL</th>
+                    <th>Date</th>
+                    <th>Author</th>
+                    <th>Tags</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!-- Controls. -->
+            <div class="controls text-right">
+                <button id="button-ref-article-add" class="btn btn-primary">
+                    Add article
+                </button>
+                <button class="button-ref-select-cancel btn btn-default">
+                    Cancel
+                </button>
+            </div>
+        </div>
+
+        <!-- Source selection for the reference editor. -->
+        <div id="view-ref-select-source" class="tab-pane">
+            <h3>Select source</h3>
+
+            <!-- Filter field. -->
+            <div class="pad-below">
+                <input id="ref-search-source"
+                       type="text"
+                       class="form-control"
+                       placeholder="Search sources...">
+            </div>
+
+            <!-- Source selection table. -->
+            <table id="table-ref-source"
+                   class="table table-condensed table-bordered table-responsive"
+                   width="100%">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <!-- Controls. -->
+            <div class="controls text-right">
+                <button id="button-ref-source-add" class="btn btn-primary">
+                    Add source
+                </button>
+                <button class="button-ref-select-cancel btn btn-default">
+                    Cancel
+                </button>
+            </div>
+        </div>
+
+        <!-- Keywords view. -->
+        <div id="view-keywords" class="tab-pane">
+            <h3 id="keyword-title">Keywords</h3>
+
+            <div class="row">
+              <div class="col-md-3 col-sm-3">
+
+                  <!-- Filter field. -->
+                  <div class="pad-above">
+                      <input id="keyword-search"
+                             type="text"
+                             class="form-control"
+                             placeholder="Search keywords...">
+                  </div>
+
+                  <!-- Keyword controls. -->
+                  <div class="controls pad-above pad-below">
+                    <ul class="nav navbar-inverse nav-stacked ">
+                        <li class="btn"
+                                data-toggle="modal"
+                                data-target="#modal-keyword-add">
+                            <a href="#">Add keyword</a>
+                        </li>
+                        <li id="button-keyword-delete" class="btn">
+                            <a href="#">Delete Keyword</a>
+                        </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+
+                <div class="col-md-9 col-sm-9 pad-above">
+                  <!-- Keyword table. -->
+                  <table id="table-keywords"
+                         class="table table-condensed table-bordered table-responsive"
+                         width="100%">
+                      <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Source</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                  </table>
+
+                  <!-- View controls. -->
+                  <div class="controls text-right">
+                      <button id="button-keyword-close" class="btn btn-default">
+                          Close
+                      </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Visualize view. -->
+        <div id="view-visualize" class="tab-pane">
+            <h3>Visualization</h3>
+            <h4 class="pad-above">2D Line Plot</h4>
+            <p>A 2D line plot showing references.</p>
+
+            <select id="viz-plot-line-sources"
+                    class="selectize-sources"
+                    placeholder="Pick sources..."></select>
+            <button id="button-viz-plot-line"
+                class="btn btn-default">
+                Generate Visualization
+            </button>
+
+            <h4 class="pad-above">2D Bar Plot</h4>
+            <p>A 2D bar plot showing references.</p>
+
+            <select id="viz-plot-bar-sources"
+                    class="selectize-sources"
+                    placeholder="Pick sources..."></select>
+            <button id="button-viz-plot-bar"
+                    class="btn btn-default">
+                Generate Visualization
+            </button>
+
+            <h4 class="pad-above">Sources in Article</h4>
+            <p>A graph visualization of all sources that appear as
+                references in a given article.</p>
+
+            <select id="viz-ref-article"
+                    class="selectize-article"
+                    placeholder="Select article..."></select>
+            <button id="button-viz-graph-ref-article"
+                    class="btn btn-default">
+                Generate Visualization
+            </button>
+
+            <h4 class="pad-above">References to Source</h4>
+            <p>A graph visualization of all references made to that source,
+                including frequencies.</p>
+
+            <select id="viz-ref-to-source"
+                    class="selectize-source"
+                    placeholder="Select source..."></select>
+            <button id="button-viz-ref-to-source"
+                    class="btn btn-default">
+                Generate Visualization
+            </button>
+
+            <h4 class="pad-above">References from Source</h4>
+            <p>A graph visualization of all references made from that source,
+                including frequencies.</p>
+
+            <select id="viz-ref-from-source"
+                    class="selectize-source"
+                    placeholder="Select source..."></select>
+            <button id="button-viz-ref-from-source"
+                    class="btn btn-default">
+                Generate Visualization
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add keyword modal. -->
+<div id="modal-keyword-add" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Add Keyword</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    A keyword is a word to look for when searching through
+                    articles. It may be associated with a source, so that a
+                    reference is automatically created when it is seen.
+                </p>
+
+                <div class="pad-above">
+                    <select id="keyword-source"
+                            class="selectize-source"
+                            placeholder="Select source...">
+                    </select>
+
+                    <div class="form-group pad-below">
+                        <input id="keyword-name"
+                               type="text"
+                               class="form-control"
+                               placeholder="Keyword name...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="button-keyword-add"
+                        class="btn btn-default"
+                        data-dismiss="modal">
+                    Add Keyword
+                </button>
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add watch URL modal. -->
+<div id="modal-watch-add" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Add URL</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>A watched URL will be checked automatically for new
+                articles. A watched URL can be the front page of website, a
+                page on a website for breaking news, a twitter account, or
+                an RSS feed.</p>
+
+                <div class="row pad-above pad-below text-center">
+                    <div class="col-md-9">
+                        <input id="watch-url"
+                               type="text"
+                               class="form-control"
+                               placeholder="http://">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="button-watch-add"
+                                class="btn btn-default"
+                                data-dismiss="modal">
+                            Add from URL
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add article modal. -->
+<div id="modal-article-add" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+                <h4 class="modal-title">Add article</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>An article can either be added from a URL, or entered in
+                manually through the article editor. If added from URL, you
+                will be taken to the results page.</p>
+
+                <b>From URL</b>
+
+                <div class="row pad-above text-center">
+                    <div class="col-md-9">
+                        <input id="article-add-url"
+                               type="text"
+                               class="form-control"
+                               placeholder="http://">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="button-article-add-url"
+                                class="btn btn-default"
+                                data-dismiss="modal">
+                            Add from URL
+                        </button>
+                    </div>
+                </div>
+
+                <div class="checkbox pad-below">
+                    <label>
+                      <input id="article-recursive"
+                             type="checkbox">
+                        Add pages linked from the article
+                    </label>
+                </div>
+
+                <p>
+                    If checked, URLs in the given URL will be parsed too.
+                    This may create articles which are not published pieces
+                    of news, depending on the site. If unsure, leave unchecked.
+                </p>
+
+                <b>Manually</b>
+                <div class="pad-above controls">
+                    <button id="button-article-add"
+                            class="btn btn-default"
+                            data-dismiss="modal">
+                        Open article editor
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Results waiting modal. -->
+<div id="modal-results-wait"
+     class="modal fade"
+     data-backdrop="static"
+     data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="pad-above pad-below">
+                    The server is fetching articles. This may take a while, so
+                    please do not refresh the page.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Visualizations waiting modal. -->
+<div id="modal-visual-wait"
+     class="modal fade"
+     data-backdrop="static"
+     data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="pad-above pad-below">
+                    The server is generating the visualization. This may take a
+                    while, so please do not refresh the page.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

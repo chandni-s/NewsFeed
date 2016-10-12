@@ -1,0 +1,464 @@
+    PHASE 3 REPORT
+
+
+Group 01: NewsFlash
+
+
+
+
+Team Members:
+Dickson Wong
+Amna Iqbal
+Miranda Xu
+Nicholas Kazlauskas
+Chandni Sehgal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      State of the Project
+Are we following the current state of the project?
+What are the changes made to the state?
+Why/why not were the changes made?
+What elements from the previous phase are we building on?
+In the current iteration, the focus was on the user stories marked for completion. In sync with it, all of the user stories, save two, were completed.
+These are as follows:
+      1.  Category sorting
+      2.  Reference searching -
+This was split up into two user stories (with the first being completed in Iteration one)
+The new user stories include:
+      a. Watch list of articles (and potentially sources)
+      b. Data export 
+Additional fixes, (owing to the interview feedback) include:
+1.  Database error handling - (making the error messages more specific) 
+      2.  Enhancing the UI intuitiveness 
+      3.  Making the data entry easier
+Fix Number 2 can be implemented via the user story:
+a. As John (a researcher), I want to add a source into the application by specifying the url, so that I may track articles from that source.
+Other user stories being worked on:
+      1.  The second part of the reference searching user story 
+      2.  Visualizations:
+      -Creation of a function to generate Network Visualizations
+      -Plot visualizations
+The functions in the database have been updated. These include the functions that had been completed in the previous iteration.
+The UI is being constructed to support the above. The focus is also on developing the visualizations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      Updated Plans
+      
+The updated release plan for the current iteration is as follows:
+== Cost ==
+Unit cost – refers to one member of the team working on the project for a day.
+We have 5 members, so in a day, we have 5 units of work that can be completed. But we are not working every day in the week, so we can expect to only have 2 days of the week to work on the project.
+For example, in a given week:
+ 5 units per day * 2 days per week = 10 units of work per week
+
+===========
+Iteration 1 (2 weeks) - Release Date: 15/10/2014
+This iteration takes into account the implementation of the essential functionalities needed by the business. These include:
+* The search for references to sources within an article and then retaining a list of references that are made inside articles.
+This iteration also focuses on the implementation of:
+* Keeping track of a list of sources, articles, and keywords.
+* Adding the list of sources, articles and keywords to the system.
+
+
+
+
+
+
+
+
+10.
+As John (a researcher), I want to keep track of a list of references made inside an article, so that I am able to analyze the different sources that influence the article.
+Priority: 10
+Cost: 1
+14A.
+As John (a researcher), I want to search (for references and sources) within the article, so that I am able to research it more thoroughly.
+Priority: 10
+Cost: 5
+1.
+As John (a researcher), I want to keep a list of articles (with appropriate tags), so that I can research the influence of certain articles and sources.
+Priority: 9
+Cost: 1
+2.
+As John (a researcher), I want to keep a list of sources (with appropriate keywords), so that I can research the influence of sources.
+Priority: 9
+Cost: 1
+3.
+As John (a researcher), I want to save changes to the list of articles and sources, so that I can retain the old data and continue from there.
+Priority: 9
+Cost: 1
+4.
+As John (a researcher), I want to add a source to the application, so that I can research the influence of sources.
+Priority: 9
+Cost: 1
+
+5.
+As John (a researcher), I want to remove a source from the application, so that  I can manage my sources.
+Priority: 9
+Cost: 1
+7.
+As John (a researcher), I want to add an article to the application, so that I can research the influence of sources in that article.
+Priority: 9
+Cost: 1
+8.
+As John (a researcher), I want to remove an article from the application, so that I can manage the articles that interest me.
+Priority: 9
+Cost: 1
+15.
+As John (a researcher), I want a display of the list of  references a source makes to other sources, so that I can research the influence of different sources and their relation to one another.
+Priority: 9
+Cost: 2
+11.
+As John (a researcher), I want to manually add references to an  article in the application, so that the software can help me research the influence  of sources.
+Priority: 8
+Cost: 1
+12.
+As John (a researcher), I want to manually remove references from an  article in the application, so that the software can help me research the influence of sources.
+Priority: 8
+Cost: 1
+
+
+13.
+As John (a researcher), I want to see a list of articles that a specific article links to, so that I can research the article.
+Priority: 8
+Cost: 1
+6.
+As John (a researcher), I want to change keywords that are associated with a source, so that  I can research the influence of sources.
+Priority: 7
+Cost: 1
+
+The total cost for this phase is 20.
+===========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Iteration 2 (2 weeks) - Release Date: 30-10-2014
+The second release will focus on the implementation of: 
+* Graph visualizations and plots representations. These pertain to different sources, articles, and the references.
+In addition, this iteration will cater to:
+
+* Recursive reference searching inside an article
+* Sorting by category
+14B.
+As John (a researcher), I want to search (for references and sources) within links of an article, so that I am able to research it more thoroughly.
+Priority: 10
+Cost: 5
+22.
+As Jessica (a librarian), I want to categorize data by its’ date, title, or keywords/tags, so that I am able to retrieve certain pieces faster.
+Priority: 8
+Cost: 2
+16.
+As John (a researcher), I want a graph visualization of references from a source to other sources, so that I can analyze the references that have been made in articles from a certain source.
+Priority: 8
+Cost: 4
+18.
+As John (a researcher), I want a graph visualization of references made between different sources, so that I can research the relationships between sources.
+Priority: 8
+Cost: 4
+
+
+
+20.
+As John (a researcher), I want to see graphical representations  (2D line plots) of the number of references made to sources, so that I can analyze the changes to the popularity of sources over time.
+Priority: 8
+Cost: 4
+
+===========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Iteration 3 (2 weeks) - Release Date: 14-11-2014
+Iteration 3 is geared towards the various types of data exportation. This includes:
+* An XML format database with the capability of storing different news articles, and discussions
+* Exportation in WARC format
+* Watch list of articles 
+* Implementation of the last graph visualization 
+
+20A.
+As John (a researcher), I want to see graphical representations (bar graph) of the number of references made to a target list of sources, so that I can analyze the changes to the popularity of sources over time.
+Priority: 7
+Cost: 4
+30.
+As John (a researcher), I want to specify the articles that I can get updates on (watch list), so that my research is relevant.
+Priority: 7
+Cost: 1
+31 .
+As John (a researcher), I want to receive updates on the articles that are on my watch list, so that my research is relevant.
+Priority: 7
+Cost: 2
+23.
+As Jessica (a librarian), I want to export data in a compatible format  (e.g. XML) to certain other software, so that the data will be accessible in the future on any system.
+Priority: 7
+Cost: 4
+
+9.
+As John (a researcher), I want to change the tags of an article in the application, so that I can research the influence of sources in this article (and to other articles).
+Priority: 7
+Cost: 1
+19.
+As John (a researcher), I want to see the graphical representations (network connections) of related articles and sources, so that I can better my understanding of the big picture of the public sphere.
+Priority: 6
+Cost: 4
+32.
+As Jessica (a librarian), I want to store the archives of articles and the related information in a WARC format, so that the data will be accessible in the future on any system.
+Priority: 6
+Cost: 4
+===========
+
+
+
+
+
+
+
+
+
+
+
+
+Iteration 4 (2 weeks) - Release Date: 28/11/2014
+The last release will focus on multiple user access tools. These include the implementation of a login system and the provision of data export and import tools for the users.
+
+27.
+As Candice (an educator), I want to export the data (sources, articles,  visualizations) through a web interface, so that the data is more readily  available to larger groups of people. 
+Priority: 6
+Cost: 4
+28.
+As Candice (an educator), I want to import the data (sources, articles, visualizations) through a web interface, so that the data is more readily available to larger groups of people.
+Priority: 6
+Cost: 4
+24.
+As Jessica (a librarian), I want a login screen for the authentication and authorization of users so that the data access is restricted and secure.
+Priority: 5
+Cost: 2
+25.
+As Candice (an educator), I want to see the table of visualizations on various categories, such as authors, source location, or references within articles, so that I can have a comprehensive view of these articles.
+Priority: 4
+Cost: 2
+26.
+As Candice (an educator), I want the allowance for student level accounts to only viewing and accessing of visualizations and queries, so that there will be a prevention of unauthorized changes to the database.
+Priority: 3
+Cost: 2
+      Task Board and the Burndown Chart
+      
+Our  Task Board is available via the Trello Link:
+https://trello.com/b/EWA48O1o/cscc01projectteam01
+
+(The access to our Task Board is through the previously sent system email)
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+      
+      
+      Verification
+This was done by unit testing, and code reviews. The former are included with our Phase 3 submission. The focus was primarily on unit testing for each of database (including query), web, rss and visualizations. 
+The code reviews are listed below. We used a checklist based inspection, taking care to address the elements listed below. 
+ReviewerFiles ReviewedVersion NumberSummary of Comments
+
+
+Nick
+
+
+
+
+
+
+
+        
+
+  
+
+
+
+
+
+
+
+
+
+
+(a) Correctness
+
+(b) Coding Style
+
+(c) Coding Guidelines
+
+(d) Documentation
+
+(e) Quality of Testing
+Miranda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(a) Correctness
+
+(b) Coding Style
+
+(c) Coding Guidelines
+
+(d) Documentation
+
+(e) Quality of Testing
+Amna
+
+
+
+
+
+
+
+
+
+
+
+
+(a) Correctness
+
+(b) Coding Style
+
+(c) Coding Guidelines
+
+(d) Documentation
+
+(e) Quality of Testing
+Dickson
+
+
+
+
+
+
+
+
+
+
+(a) Correctness
+
+(b) Coding Style
+
+(c) Coding Guidelines
+
+(d) Documentation
+
+(e) Quality of Testing
+Chandni
+
+
+
+
+(a) Correctness
+
+(b) Coding Style
+
+(c) Coding Guidelines
+
+(d) Documentation
+
+(e) Quality of Testing
+
+
+
+
+
+
+
+
+
+
+
+
+      
+       Improvements from Phase 2
+
+The CRC Model
+1
+
+

@@ -1,0 +1,234 @@
+== Cost ==
+Unit cost - one member of the team working on the project for a day.
+
+We have 5 members, so in a day, we have 5 units of work that can be completed.
+But we are not working every day in the week, so we expect to only have 2 days of the week to work on the project.
+
+For example, in one week,
+5 units per day * 2 days per week = 10 units of work per week
+
+===========
+Release 1 - 2 weeks (01/10/2014 - 15/10/2014)
+
+The main functionalities needed by the business are implemented during this phase - 
+searching for references to sources inside an article and keeping a list of references
+that are made inside articles.
+
+Furthermore, other important functionalities are implemented during this phase:
+Keeping track of a list of sources, articles, and keywords. Moreover, adding these
+to the system.
+
+10
+As John (a researcher), I want to keep track of a list of references made inside 
+an article, so I am able to analyze the different sources that influence the article.
+
+Priority: 10
+Cost: 1
+
+14
+As John (a researcher), I want to be able to search (for references and sources) 
+within the articles links (hyperlinks/web links) recursively, so that I am able to research
+it more thoroughly.
+Priority: 10
+Cost: 5
+
+1
+As John (a researcher), I want to be able to keep a list of articles (with 
+appropriate tags), so that I can research the influence of certain articles and sources.
+Priority: 9
+Cost: 1
+
+2
+As John (a researcher), I want to be able to keep a list of sources (with 
+appropriate keywords), so that I can research the influence of sources.
+Priority: 9
+Cost: 1
+
+3
+As John (a researcher), I want to be able to save changes to the list of articles
+and sources, so that I can retain the old data and continue from there.
+Priority: 9
+Cost: 1
+
+4
+As John (a researcher), I want to add a source to the application, so that I can
+research the influence of sources.
+Priority: 9
+Cost: 1
+
+5
+As John (a researcher), I want to remove a source from the application, so that 
+the I can manage my sources.
+Priority: 9
+Cost: 1
+
+7
+As John (a researcher), I want to add an article to the application, so that I can 
+research the influence of sources in that article.
+Priority: 9
+Cost: 1
+
+8
+As John (a researcher), I want to remove an article from the application, so that
+I can manage the articles I am interested in.
+Priority: 9
+Cost: 1
+
+15
+As John (a researcher), I want a display of the list of the references a source 
+makes to other sources, so that I can research the influence of different sources 
+and their relation to one another.
+Priority: 9
+Cost: 2
+
+11
+As John (a researcher), I want to be able to manually add references to an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: 8
+Cost: 1
+
+12
+As John (a researcher), I want to be able to manually remove references from an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: 8
+Cost: 1
+
+13
+As John (a researcher), I want to be able to see a list of articles that a specific
+article links to, so that I can research the article.
+Priority: 8
+Cost: 1
+
+22
+As Jessica (a librarian), I want to be able to categorize data by date, title, 
+or keywords/tags, so I can retrieve certain pieces faster.
+Priority: 8
+Cost: 2
+
+The total cost of this is 20 (or 10 units per week * 2 weeks)
+
+
+===========
+Release 2 - 4 weeks (16/10/2014 - 13/11/2014)
+
+The second release will implement the next most important requirements for the business:
+Graph visualizations and plots representations are of different sources, articles, and between them the references.
+
+Furthermore, implementation of different types of data exports occur during this phase:
+Creating an XML format database and the storage of different news articles, discussions.
+
+
+16
+As John (a researcher), I want a graph visualization of references from a
+source to other sources, so that I can analyse the references that are made in articles
+from a certain source.
+Value: 8
+Cost: 4
+
+18
+As John (a researcher), I want a graph visualization of references made between
+different sources, so I can research the relationships between sources.
+Priority: 8
+Cost: 4
+
+20
+As John (a researcher), I want to be able to see graphical representations 
+(2D line plots) of the number of references made to sources, so I can analyse the changes
+of popularity of sources over time.
+Priority: 8
+Cost: 4
+
+21
+As Jessica (a librarian), I want to be able to store collections of news, 
+discussions, and articles, so it can be used in future references.
+Priority: 8
+Cost: 4
+
+20A
+As John (a researcher), I want to be able to see graphical representations (bar graph)
+of the number of references made to a target list of sources, so I can analyse the changes
+of popularity of sources over time.
+Priority: 7
+Cost: 4
+
+23
+As Jessica (a librarian), I want to be able to export data in a compatible format 
+(e.g. XML) to certain other software, so that the data will be accessible in 
+the future on any system.
+Priority: 7
+Cost: 4
+
+6
+
+As John (a researcher), I want to change keywords associated with a source, so that 
+
+I can research the influence of sources.
+
+Priority: 7
+
+Cost: 1
+
+9
+As John (a researcher), I want to change the tags of an article in the application,
+so that I can research the influence of sources in this article (and to other 
+articles).
+Priority: 7
+Cost: 1
+
+19
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of related articles and sources, so that I can better my 
+understanding of the big picture of the public sphere.
+Priority: 6
+Cost: 4
+
+The total cost for this phase is 40. (or 4 weeks)
+
+===========
+Release 3 - 2 weeks (13/11/2014 - 26/11/2014)
+
+The last release involves implementation of multiple user access tools.
+A login system will have to be implemented, but also give users the tools to export or
+import different types of data.
+
+27
+As Candice (an educator), I want to be able to export the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily 
+available to larger groups of people. 
+Priority: 6
+Cost: 4
+
+28
+As Candice (an educator), I want to be able to import the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily available 
+to larger groups of people.
+Priority: 6
+Cost: 4
+
+24
+As Jessica (a librarian), I want a login screen to authenticate and authorize 
+users, so that the data access is restricted and secure.
+Priority: 5
+Cost: 2
+
+
+25
+As Candice (an educator), I want to be able to see table visualizations on 
+various categories, such as authors, source location, or references within 
+articles, so that I can have a comprehensive view of these articles.
+Priority: 4
+Cost: 2
+
+26
+As Candice (an educator), I want to be able to allow student level accounts to only
+view and access visualizations and queries, so that it will prevent unauthorized 
+changes to the database.
+Priority: 3
+Cost: 2
+
+The total cost for this phase is 14.
+
+
+

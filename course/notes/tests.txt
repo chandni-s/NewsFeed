@@ -1,0 +1,12 @@
+Framework for testing:
+
+* Test cases for the database class (around 20 functions)
+* Test cases would be divided by functionality
+
+-We need extensive test cases 
+-The test cases ought to cover (at minimum)the core functionalities
+
+* For the current iteration, the test cases ought to cater to
+each of the functionalities
+
+* The testing should also cover the updated database functions

@@ -1,0 +1,63 @@
+team01-Project/src/server.py 
+(commit e60a154ce4a541f44dc7b2fc6283287c0f9c53bf, branch Master)
+
+== CORRECTNESS ==
+
+The server seems to run and user interaction doesn't seem to crash the
+server.
+
+Interactions appear to do the correct thing as the result immediately shows
+on screen - add source, add article, etc.
+
+== DOCUMENTATION ==
+
+The Response class is used throughout but no indication of how Response class
+is used is at all present in the document.  Lines 20-21 provide some insight 
+on why the Response class is being used, but does not provide how it is used.
+
+Similarly, Request is used everywhere, but is not explained.
+
+In particular, lines 92, 94, 109, 111-114, 124, 126 all return
+Response objects, but it is not obvious as to how Response could be used.
+
+Line 342: It is not immediately obvious as to what TldDomainNotFound, TldBadUrl
+exceptions are, and no comments indicate this.
+
+Similarly, line 375 is not an obvious exception handle.
+
+Docstrings seem to correspond and explain what the functions do.
+
+== CODING STYLE ==
+
+Variable names and function names make sense.  
+
+There do not seem to be redundant variables.  
+
+In particular, there is a good use of initializing objects when returning them
+instead of creating a variable for the object and then returning it.  For 
+example, lines 109 and 111 all return a Response object and is returned as 
+soon as it is initialized.   
+
+== CODING GUIDELINES ==
+
+The project follows PEP8. No PEP8 errors appeared in the code.
+
+Some variable names overshadow some names that have been defined already by
+the standard library.  In particular lines: 134, 136, 160, 162, 328, 329, 330, 
+333, 362 are all examples of where the variable name "id" is used when "id" is 
+used already.
+
+== TESTING ==
+
+The various user interactions can be tested through manual testing - testing
+different situations, such as attempting to add invalid items.
+
+For example,
+1.  Testing when the article is added, but the source has not been added yet.
+2.  Testing when the article is added, but the source has been added already.
+etc.
+
+== SUMMARY ==
+
+More documentation and comments should be provided.  In particular, some 
+information as to how Request and Response could be placed within the preface.

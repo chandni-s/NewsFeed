@@ -1,0 +1,777 @@
+Introduction
+Our Team is named NewsFlash and comprises of 5 members. We coined the team name 
+from the plethora of news sources, and the speed of accessing the information. 
+Our team is eager to contribute to the project, and to create a winning 
+application. As a whole, we have a lot of shared interests- and are looking 
+forward to learning and contributing. From left to right, the members are, 
+Nick Kazlauskas, Amna Iqbal, Miranda Xu, Dickson Wong and Chandni Sehgal.
+
+
+
+Amna Iqbal
+I come from a technical background i.e. Computer Science. In addition, I have a 
+plethora of varied interests (ranging from photography, editing, and sports to 
+digital media etc.) I have a keen interest in honing my technical skills- and 
+keeping in sync with the latest technologies and trends. I am interested in the 
+merging of the tech with the humanities. As such, endeavors which rely on,and 
+build on other disciplines always stand out for me. I have a background in 
+Software Testing/QA. I am also an avid reader. Other than that, I have an 
+interest in sports, and have played for various teams in numerous settings. 
+I am a fan of most kinds of sports, intelligent reading, and tech. C
+
+
+Chandni Sehgal
+Born in India, I am a third year computer science specialist in the 
+comprehensive stream at University of Toronto and hope to graduate in 2016. I 
+moved to this country in grade 8. Subjects like physics and mathematics always 
+gained respect from me, but I always had strong interests in computers. I had 
+never seen a computer back home, so when I got PC in grade 9 I was very 
+fascinated how it worked and therefore, I decided to pursue a career in it. My 
+interest lies in cryptography and foresees myself having a career in embedded 
+security. I hail from south west of GTA (Brampton), which is 2 hours (one way) 
+away from this campus via GO transit. My everyday routine comprises of waking up
+at 6 and finishing off the day at 12:00am. I believe in self confidence, hard 
+work (and Karma).
+
+
+Dickson Wong
+I am a 4th year undergraduate student in the Concurrent Teacher Education 
+Program; I major in mathematics and computer science. My study interests lie 
+mostly in theoretical studd (we all like the mathy type stuff), but after 
+sessions with students, I do tend to think about things I could have "done 
+better" (and sometimes, "did well"). Sometimes, I engage myself in problems 
+relating to algorithms and the underlying mathematics. Whenever I have more free
+time though, I attempt transcribing music that I get motivated to play on my out
+of tune piano (although I fail more often than not). Fortunately, there are many
+talented people out there who will have done this task already, so I can just 
+enjoy playing thepiece of music. Once in a while though, I pull out some older 
+music tracks just so I can get nostalgic (hey, we're all getting older).
+
+
+Miranda Xu
+I am a 3rd year Computer Science co-op student, specializing in Software
+Engineering stream. I came here 2 years ago, from north of China, my education 
+background makes me better at Math and Statistics, but unfortunately, also let 
+me know less about Computer Science before I study here. So all my technical 
+knowledge/skills may be mainly from the courses I have taken and my work term 
+experience. I finished my 1st co-op work term at Ministry of Government Services 
+during the past summer. My position is Web Modernization specialist, and I 
+worked with my team to implement website projects followed standard Agile 
+development process. The computer science realm is always attractive to me, and 
+the study of computer science is just like an adventure, which can let me 
+challenge and discover myself. However, my life faith of "Live for delicacy and 
+die for love " has never changed, maybe should append music and movies. So in 
+the future, I do hope I can engage in an industry that combines computer science
+and my interests together, cheer for "Carpe diem"!
+
+
+Nicholas Kazlauskas
+I am a 4th year undergraduate student taking a Specialist Program in Computer 
+Science. I am an advocate for the free software movement, free speech, and 
+privacy rights. I have been working with computers from a young age, and have 
+accumulated technical experience in many areas of computing - embedded systems, 
+robotics, security, networking, operating systems, compilers, graphics, reverse 
+engineering, and programming languages. The spare time I have is often spent 
+programming, refactoring, patching, and contributing to open source projects. 
+Data-driven and functional programming paradigms, with simple, testable code- is
+what I strive for. Although my interests are not balanced, and most of my life 
+is spent interacting with computers, I do enjoy photography, politics, and golf. 
+In the past I have enjoyed woodworking, machining, and metalworking, I have 
+aspirations for the future that I can dabble in hobbyist work again with my own 
+machine shop. In computing, I hope that I can positively impact future 
+generations of software developers.
+
+
+Personas
+
+John Bates
+John Bates is a 35 year-old researcher. He is interested in research in language,
+media, and public. He considers his research as his hobby. He likes to live a 
+stable, predictable lifestyle, and these reflect in his choices of research tools.
+Johns day starts with breakfast with his family. After it, he hurries on to work,
+worried that he may be late to work due to the hour of transit ahead of him. 
+During the work day, he helps out as an assistant professor. If asked about his 
+research, he could spend the whole day talking about it. When he finally gets
+home through the rush hour traffc, he enjoys dinner with his family and bonds 
+with his child. In the late evening, when he has some time to himself, he is the
+most productive in his research. His research requires him to look at very large
+networks of information flow. As such, he prefers to work with large graphs at a
+single time. He enjoys looking at, and analyzing the "big picture". This helps in
+simplifying the visual representations and assisting him with his research.
+John uses computers often to help him with his research, but he wouldn't consider
+himself technically savvy. The techniques and tools he takes advantage of were 
+taught and given to him by his acquaintances. As well, although he is adaptable 
+to change- he prefers that everything works like he would expect it to. He likes
+his tools to be accessible through a web browser on a desktop computer. He is 
+not very comfortable using his smartphone.
+
+
+Jessica Walker
+Jessica Walker is a 35 year old Librarian. She has a high knowledge of 
+Linguistics, History, and English and literature. She possesses Advanced degrees
+in Language and Literature, and Library and Information Science. This is 
+beneficial in her role with data storage and categorization. She enjoys her work,
+and is always on time. She is punctual and on schedule. She works in the mornings,
+and all of her tasks are completed during her work hours. Jessica works with the
+computers for encompassing electronic resources, metadata, archives, and 
+knowldedge management in her work tasks. She has a prior knowledge of digital 
+repositories and open source digital tools. She has familiarity with markups, 
+and graphical interfaces. Her days are diverse and include various tasks. She 
+retrieves, and categorizes information according to given requirements. She also
+manages data storage, and ensures that it is in a compatible format. In her breaks,
+she likes to read news, and articles from a range of sources. She is technically
+sound, and if she runs into a technical issue- she would rather communicate with
+support staff (over a manual). This is useful, as she works during the day- when
+access to support staff is convenient. She is also familiar with the latest 
+smartphones, and if need be would be open to learning more about them.
+She is open to learning about new tools and technologies. As such, she is eager 
+to find out the best and most efficient resources to implement in the tasks. She
+is geared towards strict standards compliance, and wants to ensure that any new 
+implementation is in sync with the existing tools and software. She is familiar 
+with consoles interfaces, as well as graphical interfaces. However, in terms of 
+preference- she would much rather work with visualizations and GUI.
+
+
+Candice Walters
+Candice Walters is a lawyer and a PhD student in the Graduate School of Journalism.
+Her research is focused on journalism ethics and the impact of media and 
+technology on politics and public. She wants to impact the younger generation 
+with the work that she has done and hopes to reach out to them. Walters began 
+her career serving as a lawyer in the areas of digital media, communications and
+sports matters at a private law firm. She met her husband at a law firm and they
+decided to settle down. Candices husband was a Senior Vice President of a 
+national news and television network but was framed into a case, based on false 
+information supplied by unreliable sources. It was during this time that Candice
+decided to pursue postdoctoral studies in journalism. She wants to understand the
+media and wishes to be able to contribute reform the system. Part of this goal 
+requires her to be a huge part in the education system. Candice feels blessed to
+be a mother of a 6 year old daughter and a 4 year old son. She spends time with 
+her children daily and is very assertive when it comes to their education. She 
+believes that the education system needs to be dynamic and constantly improving 
+with current trends. Mrs. Walters will be teaching a new undergraduate course 
+called "Legal Constraints on Digital Activity" for the first time. She likes her
+classes to be interactive; therefore, she emphasizes the use of graphics and
+multimedia in her teachings. She also understands the value of digital resources
+and their need to be reliable. She foresees her in a larger role in modern 
+education and hopes to reach out to as many young people as possible. She believes
+that education should evolve with available technology. She likes to know of every
+technical instrument and uses popular and trendy products. She feels that their 
+software is very sophisticated. On the other hand, the tools that she uses are not
+too sophisticated, work well on the mobile platform, and are also presented well. 
+She understands the value in presentation as it attracts the younger crowd.
+
+
+
+User Stories
+Preface
+Throughout the document, there is frequent use of key concepts that the clients 
+want, and the software will work with. For clarity, they are defined below:
+- Source: A publisher of news media. Media can come in many forms - text, audio, 
+video, but media is not limited to just these examples. A source could be a 
+website, a blog, a Twitter account, a YouTube channel, or many other existing and
+emerging forms.
+- Keyword: A word or phrase associated with a source. For example, the 
+"Associated Press" is often referred to as "AP", and these are both keywords for
+the same source. The URL of the main page of a news article website could also be
+used as a Keyword to match sources from references.
+- Article: A news piece published by a source. Since sources publish many different
+forms of media, this could be an article on a website, a blog post, a Twitter 
+discussion, a video, a podcast, or anything else on the internet.
+- Tags: Information associated with an article - such as author, date, number of
+hits, etc [This will evolve as requirements for data formats and visualizations 
+evolve.
+- Link: A connection formed when an article cites an article from another source 
+directly. The connection is between two articles.
+- Reference: A connection formed when an article cites a source, either by citing
+an article from another source, or the name of the source. The connection is from 
+an article to another source.
+- Visualization: A representation of stored data in the software. Lists, tables, 
+graphs, plots, pie charts, are a few examples of visualizations.
+
+
+User Stories
+1
+As John (a researcher), I want to be able to keep a list of articles (with 
+appropriate tags), so I can research the influence of certain articles and sources.
+Priority: Must
+Confirmations:
+	- Articles should contain the following information:
+		- Mandatory tags: URL, date, source
+		- Optional tags: name, author, "popularity" (links), etc (as 
+		requirements evolve)
+		- The URL should be unique.
+	- If a mandatory field is missing, the article should not be added.
+
+2
+As John (a researcher), I want to be able to keep a list of sources (with 
+appropriate keywords), so research the influence of sources.
+Priority: Must
+Confirmations:
+	- Sources should contain the following information
+		- Mandatory Keyword: Name
+		- Optional Keyword: URL, aliases, etc (as requirements evolve)
+	- If a mandatory field is missing, the source should not be added.
+	- Keywords should be unique amongst all sources.
+
+3
+As John (a researcher), I want to be able to save changes to the list of articles
+and sources, so that I can retain the old data and continue from there.
+Priority: Must
+Confirmations:
+	- The user should be able to store data (save button).
+ Success: session is resumed next time the user logs in
+ Fail: display message
+	- Failed to save. Try again!"
+	- Previous session is corrupt."
+
+4
+As John (a researcher), I want to add a source to the application, so that I can
+research the influence of sources.
+Priority: Must
+Confirmations:
+	- User must add a name.
+ Success: perform the action chosen and display the message: "Source Added!"
+ Fail: display one the messages: "Name was used already, try a different source."
+
+5
+As John (a researcher), I want to remove a source from the application, so that 
+the I can manage my sources.
+Priority: Must
+Confirmations:
+	- User must include a keyword for a source in order to remove it.
+ Success: perform the action chosen and display the message: "Source Removed!"
+ Fail: display one the messages: "Keyword was not found; try again."
+
+6
+As John (a researcher), I want to change keywords associated to a source, so that
+I can research the influence of sources.
+Priority: Should
+Confirmations:
+	- Keywords can be used to match sources.
+	- Keywords need to be unique across sources.
+
+7
+As John (a researcher), I want to add an article to the application, so that I can 
+research the influence of sources in this article (and to other articles).
+Priority: Must
+Confirmations:
+	- There will be a Add button - upon clicking this one:
+		- user will be allowed to enter the article via browse button 
+		(upload article) or text box where they can copy and paste
+		- if the user wants to add an article, the tags associated 
+		(such as author, name, etc) would appear and the user can change them
+		- file/article size limit and support formats would appear
+ Success: display message "Changes saved"
+ Fail: display one of the messages below:
+	- "Failed to add article due to size limit exceed. Please try again!"
+	- "Failed to add article due to format. Please try again!"
+	- "Empty field. Please add article to modify"
+	- "Article already exists."
+
+8
+As John (a researcher), I want to remove an article from the application, so that
+I can research the influence of sources in this article (and to other articles).
+Priority: Must
+Confirmations:
+	- There will be a Remove button - upon clicking this one:
+		- User will be allowed to enter the article they want to remove
+ Success: display message "Article removed!"
+ Fail: display one of the messages below:
+	- "Failed to remove article. Please try again!"
+	- "Empty field. Please enter an article to remove"
+	- "Article does not exists. Please try again!"
+
+9
+As John (a researcher), I want to change the tags of an article in the application,
+so that I can research the influence of sources in this article (and to other 
+articles).
+Priority: Should
+Confirmations:
+	- There will be a Change button - upon clicking this one:
+		- User will be allowed to enter the article they want to remove
+		- User specicies which tag they want to change
+ Success: display message \Article Changed!"
+ Fail: display one of the messages below:
+	- "Failed to change an article. Please try again!"
+	- "Empty field. Please enter an article to change"
+	- "Article does not exists. Please try again!"
+
+10
+As John (a researcher), I want to keep track of a list of references made inside 
+an article, so I am able to analyze the different sources that the article is 
+influenced by.
+Priority: Must
+Confirmations:
+	- Each article should contain a list of references made to other sources.
+	- The source should be a source that was already included by the user.
+	- There should not be duplicates every time a reference is made inside 
+	the article to the source.
+
+
+11
+As John (a researcher), I want to be able to manually add references to an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: Must
+Confirmations:
+	- The user should be able to choose an article from a list.
+ Success: display the message:
+	- if added a reference: "Reference added"
+ Fail: display message:
+	- Source field empty. Reference cannot be added/unmodified."
+	- Source not found. Try again."
+
+12
+As John (a researcher), I want to be able to manually remove references from an 
+article in the application, so that the software can help me research the influence 
+of sources.
+Priority: Must
+Confirmations:
+	- The user should be able to choose an article from a list.
+ Success: display the message:
+	- if removed a reference: Reference removed
+ Fail: display message:
+	- Source not found. Try again."
+	- Source field empty. Reference cannot be removed/unmodified."
+
+13
+As John (a researcher), I want to be able to see a list of articles that a specific
+article links to, so that I can research the article.
+Priority: Must
+Confirmations:
+ Success - The "list of reference articles" can be shown after click the "reference 
+	list" button.
+	- If the list is not empty:
+		- Display list of links to other articles
+		- If there are multiple articles with the same name, user prompted
+		 with additional information about each article.
+ Failure - display message:
+	- "Sorry, no article is given, input article name/URL that you need."
+
+
+14
+As John (a researcher), I want to be able to search (for references and sources) 
+within the articles links (hyperlinks/web links) recursively, so that I can research
+more thoroughly.
+Priority: Should
+Confirmations:
+	- The user, whenever adding an article, needs to specify whether this 
+	automated searching occurs.
+	- Each link to another article can be searched recursively.
+	- Every reference to a source and every link to another article is saved.
+	- Each reference and link should be unique and never duplicated.
+
+15
+As John (a researcher), I want a display of the list of the references a source 
+makes to other sources, that I can research the influence of different sources 
+and their relation to one another.
+Priority: Must
+Confirmations:
+	- The user is prompted for the source, and only sources specified can be 
+	displayed.
+ Success - A list of references is displayed.
+	- If the list is not empty: Each reference displays the name of the source
+ Failure - display message:
+	- "Sorry, no source is given, please input the sources as you need."
+	- "Sorry, this source cannot be parsed. Please check the source name/URL 
+	and try again."
+
+16
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of a specific source with the reference sources of this 
+source, so it can be analyzed efficiently.
+Priority: Must
+Confirmations:
+ Success:
+	- A source to sources graph contains:
+		- each node represents a source
+		- every directed edge represents an article made from one source 
+		to another
+	- If there are no correlations between articles/sources: there would be no
+	edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles 
+	as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check 
+	their names/URLs and try again."
+
+17
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of a specific article with the reference sources of this 
+article, so that I can see which kind of sources this article refers to.
+Priority: Must
+Confirmations:
+ Success
+	- An article to sources graph contains:
+		- each node represent either the article in question or the sources
+		- every directed edge would represent the reference the article makes to source
+	- If there are no correlations between articles/sources: there would be no edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check 
+	their names/URLs and try again."
+
+
+18
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of a specific article with the reference articles of this
+article, so that I can see clearly that what specific article reference this article uses.
+Priority: Must
+Confirmations:
+ Success
+	- An article to articles graph contains:
+		- each node represents an article
+		- each directed edge represents a link from the article to other articles
+	- If there are no correlations between articles/sources: there would be no edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check 
+	their names/URLs and try again."
+
+19
+As John (a researcher), I want to be able to see graphical representations 
+(network connections) of related articles and sources, so that I can better my 
+understanding of the big picture of the public sphere.
+Priority: Must Estimate: 1 day
+Confirmations:
+ Success
+	- A combined sources and articles graph contains:
+		- a larger node represents a source
+		- smaller nodes represents articles
+		- edges represent connections as described in the previous three types
+		- For every node which are only on the reference level(their 
+		reference are not shown completely on the graphical representation), 
+		we can set them as a core source(maybe by clicking the button) to
+		let the graphical representation show their references completely.
+	- If there are no correlations between articles/sources: there would be no edges
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check their 
+	names/URLs and try again."
+
+
+20
+As John (a researcher), I want to be able to see graphical representations 
+(2D plots) of the popularity of an article (or source), so I can analyze its 
+impact on society better.
+Priority: Should
+Confirmations:
+ Success
+	- On the graph, each curve represents one reference source site, labeled with sitename.
+	- Different curves should have different colors.
+	- The ordinate should be the frequency of the sources are referenced by.
+	- The abscissa should be the time line of the reference time.
+	- The abscissa time unit can be set to month(default), year, week and season.
+ Failure - display message:
+	- "Sorry, no source/article is given, please input the sources/articles as you need."
+	- "Sorry, some of the sources/articles cannot be parsed. Please check their 
+	names/URLs and try again."
+
+
+21
+As Jessica (a librarian), I want to be able to store collections of news, 
+discussions, and articles, so it can be used in future references.
+Priority: Must
+Confirmations:
+	- Each entry should contain different information and can only be saved 
+	if the mandatory tags are there.
+	- The data format should be consistent throughout all entries.
+	- There should be enough data for each entry depending on which articles 
+	were referenced, but does not
+	contain anymore than that.
+	- The format should be compact, and organized in a reasonable way.
+
+22
+As Jessica (a librarian), I want to be able to categorize data by date, title, 
+or keywords/tags, so I can retrieve certain pieces faster.
+Priority: Could
+Confirmations:
+	- There will be three options for data categorization.
+		- Date
+		- Title
+		- Tags
+ Success: display message: "Data categorized successfully"
+	- data can be sorted by the category chosen;
+ Failed:
+	- data that cannot be sorted by the category will be listed separately - 
+	"The following was missing X" (X is the chosen sorting criteria)
+
+23
+As Jessica (a librarian), I want to be able to export data in a compatible format 
+(e.g. XML) with certain other software, so that the data will be accessible in 
+the future on any system.
+Priority: Must
+Confirmations:
+ 	- The data format will follow the requirements set out by the client as the project
+ 	evolves.
+ 	- Other software (perhaps visualization) will be able to use the database files.
+
+24
+As Jessica (a librarian), I want a login screen to authenticate and authorize 
+users, so that the data access is restricted and secure.
+Priority: Should
+Confirmations:
+ 	- There should be a login screen, to allow the users to input their credentials.
+ Success: display message: "Login successful" and "User authenticated"
+ Fail: display one of the below messages
+	- "Login failed. Please try again!"
+	- "Authentication failed. Please try again!"
+
+25
+As Candice (an educator), I want to be able to see pie charts for the number of 
+articles by each author, so that I can show contributions of different author's from the past.
+Priority: Must
+Confirmations:
+ Success:
+	- Each part of the chart are different in color
+	- The authors names can be shown on the charts.
+ Failure - display message: "There are no articles in the database."
+
+
+26
+As Candice (an educator), I want to be able to see Time Series graphs for dates 
+of sources, so that I can present the changes in the trends of sources over time.
+Priority: Must Estimate: 1 day
+Confirmations:
+ Success - display message:
+	- The graph shows time series graph for articles from the date the user chooses.
+ Failure - display message:
+	- "Sorry, no source is given, please input the sources as you need."
+	- "Sorry, some of the sources cannot be parsed. Please check their 
+	names/URLs and try again."
+
+
+27
+As Candice (an educator), I want to be able to see table visualizations on 
+various categories, such as authors, source location, or references within 
+articles, so that I can have a comprehensive view of these articles.
+Priority: Could
+Confirmations:
+ Success:
+	- the top row indicates every reference sources name, and the right side 
+	column labels the time unit(month, year, week or season).
+	- User can set the time range manually
+	- The bottom row will show the amount cites time of each reference in 
+	the defined time range.
+ Failure - display message:
+	- "Category not specified."
+	- "Articles with this category do not exist"
+
+
+28
+As Candice (an educator), I want to be able to set data sharing permission for 
+students, so that it will prevent plagiarism.
+Priority: Must
+Confirmations:
+	- An Educator login screen will have checkbox options to allow Import/Export data
+ Success:
+	- Checkmark on checkbox beside "Allow Import/Export data" will allow data sharing
+ Fail:
+	- if a student authenticator will try to import/export data - he/she will 
+	get message, "Error! Data Sharing not allowed. Please contact admin"
+
+
+29
+As Candice (an educator), I want to be able to export the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily 
+available to larger groups of people. 
+Priority: Could
+Confirmations:
+ Success for the users who have access to data sharing.
+	- Select export data: prompts user to save
+ Failure - display message:
+	- "Sorry, you don't have the access to this data. Please check with the administrator
+
+30
+As Candice (an educator), I want to be able to import the data (sources, articles, 
+visualizations) through a web interface, so that the data is more readily available 
+to larger groups of people.
+Priority: Won't
+Confirmations:
+ Success for the users who have access of data sharing
+	- Select import data: set current database to data
+	- Indicate whether marked the data with data author.
+ Failure - display message:
+	- "Sorry, you don't have the access of this data. Please check with the 
+	administrator(with email address)."
+	- "Sorry, no data is selected to execute with, please select the data 
+	you need and do the operations again."
+	- "Sorry, your data type is incompatible, please check again."
+
+
+
+
+
+
+System Design
+
+The software manages a collection of articles, published by sources, and the links and references between
+them. The user can input sources, articles, and add links and references. The managed articles can be
+categorized to filter and find specific content. With the managed data, it creates representations of the links
+and references.
+
+The main components of the software are:
+	1. The database that stores the source entries and article entries, each of which may contain different
+	types of data.
+	2. The interface that allows the user to load from a database, modify the database by adding new sources
+	and articles.
+
+The interface also allows for a variety of visualizations to be created from the data stored.
+In the system, the user must interact with the interface and specify sources and articles. The interface will
+then deal with finding connections and store both the sources/articles and connections that it has found into
+the database.
+
+
+System Metaphor
+
+Every store has a list of different groups of consumers that often buy from the store, from the elderly to the
+hip young kids (which is a very basic example). However, every group of consumers also visit different types
+of stores.
+
+A company hires an analyst to understand these relationships - the company will tell the analyst exactly
+which groups of consumers the company is interested in and will also specify which stores (whose consumer
+traffic) are particularly of interest to the company.
+The analyst will then research a store, taking note of the consumer groups that are of interest to the company.
+
+Sources
+We liken the sources of information (that we want to analyze) to be the different stores. We expect that a
+certain consumer group will likely visit many stores - just like how an article may contain many references
+to sources.
+We can also draw connections between two stores if they happen to have the same consumer groups visit
+them - just like how we draw connections between sources of information if there is an article from one source
+that references from another. Information about stores is stored inside the filing cabinet (database).
+
+Articles
+We liken the articles to be different consumer groups. Different consumer groups visit different stores -
+similar to how different articles make references to different sources. Information about consumer groups is
+stored inside the filing cabinet (database).
+
+User
+The company is the user, providing a list of sources (consumer groups), and articles to analyze (stores). The
+company interacts with the analyst.
+
+
+Analyst
+	- The analyst is similar to the interface - it is whom the company (user) interacts with.
+	- The analyst is responsible for interpreting information from the company (similar to how the interface
+	interprets user input).
+	- The analyst will seemingly "analyse" the relationships between the consumer groups and the stores
+	(similar to how the connections between articles and references just appear on screen for the user to
+	see when they give input).
+	- The analyst is responsible for keeping a filing cabinet (or of the sort) to keep track of which consumer
+	groups and stores the company wants to look at (like how the interface will interact with the database).
+	- The analyst is also responsible for presenting visualizations of the data that he has collected to the
+	company, depending on what visualizations the company would like to see. (just like how the user can
+	choose from a few visualisations)
+	- The analyst will interact with the company (the user) and keep track of information with his filing
+	cabinet (database).
+
+Database
+What the analyst uses to keep track of all the consumer groups and the stores that the company provided
+and all of the information that he has researched.(It could be a filing cabinet).
+
+
+
+
+Release Plan
+
+
+Release 1 - 14 days (25/09/2014 to 09/10/2014)
+
+Core functionality to get a working and usable piece of software for this release. Basic data entry and
+visualizations will be completed during this iteration. Below is the list of the user stories completed and
+their estimates.
+
+User Story 1 (1 day)
+	Design of the schema and implementation of the interfaces for storing sources will be done.
+User Story 2 (1 days)
+	Design of the schema and implementation of the interfaces for storing articles will be done.
+User Story 3 (8 days)
+	Design and integration of the database will need to be done. Extra time is allocated to deal with potential
+	problems with storing data.
+User Story 4 (4 hours)
+	An interface will be created for adding sources to the database.
+User Story 5 (4 hours)
+	An interface will be created for removing sources to the database.
+User Story 7 (4 hours)
+	An interface will be created for adding articles to the database.
+User Story 8 (4 hours)
+	An interface will be created for removing articles to the database.
+User Story 10 (1 day)
+	Design of the schema and implementation of the interfaces for storing references will be done.
+User Story 11 (4 hours)
+	An interface will be created for adding references to an article in the database.
+User Story 12 (4 hours)
+	An interface will be created for removing references to an article in the database.
+User Story 13 (1 day)
+	A list visualization will implemented for links between articles in the database.
+User Story 15 (1 day)
+	A list visualization will implemented for links between articles in the database.
+
+
+Release 2 - 28 days (09/10/2014 to 06/11/2014)
+
+Although the previous release was functional, there are many features the business would like to make it
+easier to analyze data, and make it presentable. Most of the advanced visualizations of data will be completed
+during this iteration. Working with graphical visualizations will be a new experience for most of the team,
+and appropriate time for research and testing must be allocated to ensure it is functional. Estimations for
+similar visualizations are amortized for how often they are used. Below is the list of user stories completed
+and their estimates.
+
+User Story 16 (2 days)
+	A graph visualization will be implemented between sources in the database.
+User Story 17 (2 days)
+	A graph visualization will be implemented between articles and sources in the database.
+User Story 18 (2 days)
+	A graph visualization will be implemented between articles and sources in the database.
+User Story 19 (5 days)
+	A graph visualization will be implemented between articles and sources in the database. More time is
+	allocated to accommodate for the additional complexity compared to the other graph visualizations.
+User Story 20 (8 days)
+	A plot visualization will be implemented between articles, sources, references. This is a unique visualization
+	that works with a large variety of data into one view.
+User Story 25 (5 days)
+	A pie chart visualization will be implemented for articles and authors.
+User Story 27 (4 days)
+	A table visualization will be implemented for software data. This is not graphical, but works with a large
+	variety of data into one view.
+
+
+Release 3 - 20 days (06/11/2014 to 26/11/2014)
+
+The product is usable for research, but it is not suitable for multiple users yet. The data can be used for
+research, but it cannot be exported for use with the library systems yet, and there are still key productivity
+improvements to make it nicer for research. This iteration will address these problems. Appropriate time is
+allocated for the account system and the export functionality, as research and consultation with the clients
+will be necessary. Below is the list of user stories completed and their estimates.
+
+User Story 6 (2 days)
+	Design of the schema and implementation of the interfaces for storing keywords will be done, and the interface
+	for adding them will be integrated with the sources interface.
+User Story 14 (5 days)
+	Research for HTML parsing will need to be done, and proper testing to minimize false positives of links and
+	references. Integration into the article interface will also need to be completed.
+User Story 22 (3 days)
+	Design of the schema and implementation of the interfaces for storing keywords will be done, and the interface
+	for adding them will be integrated with the articles interface. An interface for filtering the articles will also
+	be implemented.
+User Story 23 (4 days)
+	Consultation with the client, and research of their requested format will need to be done. Testing will be
+	important, to export only correct data from the database.
+User Story 24 (6 days)
+	Design of the schema and implementation of the interfaces for managing accounts will be completed. Research
+	of best practices for account systems will be needed, and extra time is allocated for testing to ensure the
+	system is secure.
+
+
+Future Releases
+The user stories that did not make it into the release iterations were deemed to be lower priority by the
+business, or had estimates that were too long to complete a working application within the release iterations.
+
+
+
+
+
+
+
+

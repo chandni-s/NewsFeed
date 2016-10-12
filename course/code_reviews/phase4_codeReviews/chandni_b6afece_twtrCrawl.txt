@@ -1,0 +1,48 @@
+
+File Name: 		twitter_crawler.py
+Version Name:		b6afece
+Location: 		team01-Project/src/twitter_crawler.py
+
+a) Correctness:
+Upon reading this code, I was able to understand this code logically.
+It implements what is required and code is written bug free. All the 
+components that are implemented works fine, however there exists one 
+function that is missing implementation at line:231
+
+
+b) Coding style
+- Consistent
+- Code does not follow Pep8 - have extra white spaces and over 80
+	characters in some line
+- Need to use more white space to help understand code more easily 
+
+
+c) Coding guidelines
+- Follows coding guidelines as expected 
+- Have enough comments and doc-strings to facilitate understanding of code easily
+- Good use of naming conventions
+- Few variables needs better naming such as line:93 
+
+
+d) Documentation
+- line:81 - should be "Not" instead of "Nor"
+- the link or relationship between 'tweet' and 'article' needs more 
+	explanation. for ex: line:81 is trying to get tweet but comment in 
+	line:83 is talking about article
+- better, meaningful variable instead of 'b' could be used in line:93
+- unnecessary print statement on line:97, 127, 139, 142, 211, 215  - if its 
+	for testing purposes, it should be removed
+- Comments are too long in line:135-137
+- unnecessary commented-out code at line:251, 259
+
+e) Testing
+- A thorough test case has been written in Main, which appears to test 
+	thoroughly; however a separate unit test case file is needed to follow
+	PyUnit testing format 
+
+f) Summary
+Overall, the code written makes sense logically. It appears bug free and intends to do
+what's expected. Increase in use of white space is highly recommended; over use of 
+unnecessary print statements is cluttering the code. The file needs to have separate test
+file to test it thoroughly by following the PyUnit test case guidelines. 
+But overall, the code works as expected and performs what's intended. 
