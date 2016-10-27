@@ -20,3 +20,10 @@ Path         | Description
 ## Usage
 - Run `python ./src/server.py`
 - Navigate your web to http://127.0.0.1:5000.
+
+## Contributors
+- Chandni Sehgal (c.sehgal@gmail.com)
+- Nick Kazlauskas
+- Amna Iqbal
+- Miranda Xu
+- Dickson Wong
