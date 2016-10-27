@@ -23,7 +23,7 @@ Path         | Description
 
 ## Contributors
 - Chandni Sehgal (c.sehgal@gmail.com)
-- Nick Kazlauskas
-- Amna Iqbal
 - Miranda Xu
 - Dickson Wong
+- Nick Kazlauskas
+- Amna Iqbal
