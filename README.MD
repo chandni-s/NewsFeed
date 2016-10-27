@@ -1,4 +1,4 @@
-## News Feed
+## News Flash
 This is an application that allows a user to enter news websites & monitor
 which other sites uses it as reference.
 
