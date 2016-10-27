@@ -25,10 +25,12 @@ def plot_bars(database, imgname, sources):
     print ("PRINT GRAPH INFO BELOW ============")
     print (sources)
 
+    print (graph_info)
+
     # Format the years to be integers
-    # years = []
-    # for year in graph_info[0]:
-    #     years.append(int(year))
+    years = []
+    for year in graph_info[0]:
+        years.append(int(year))
 
     # Choose an combination of line style
     color = 0
@@ -44,34 +46,36 @@ def plot_bars(database, imgname, sources):
     # Determine the width of each bar depending on the number of sources
     width = 0.9 * (1.0 / len(graph_info[1]))
     
-    years = [2011, 2012, 2013, 2014, 2015, 2016] * len(sources)
-    # Graph a line for each source in sources
-    # for i in range(len(sources)):
-
-    #     # Find where to place bars depending on width and number of sources
-
-    #     new_years = [year + width * i for year in years]
-        
-    #     print new_years
-    #     print ("============")
-    #     print (graph_info[1][i][i])
-    #     print (graph_info[2][i])
-    #     #ax.bar(new_years, 1, width=width, color=colors[color],label=graph_info[2][i])
-
-    #     # x-axis, y-axis, width, color, label
-        
-    #     # Choose different colors and styles for lines
-    #     color += 1
-    #     if color > len(colors):
-    #         color = 0
+    #years = [2011, 2012, 2013, 2014, 2015, 2016] * len(sources)
+    #Graph a line for each source in sources
     for i in range(len(sources)):
-        # Find where to place bars depending on width and number of sources
-        new_years = [year + width * i for year in years]
-        ax.bar(new_years[i],randint(1,20),width=width,color=colors[color],label=graph_info[2][i])
 
+        # Find where to place bars depending on width and number of sources
+
+        new_years = [year + width * i for year in years]
+        
+        print new_years
+        print ("============")
+
+        for j in years:
+            print (graph_info[1][i][i])
+            print (graph_info[2][i])
+            ax.bar(new_years[j], graph_info[1][i][i], width=width, color=colors[color],label=graph_info[2][i])
+
+        # x-axis, y-axis, width, color, label
+        
+        # Choose different colors and styles for lines
         color += 1
         if color > len(colors):
             color = 0
+    # for i in range(len(sources)):
+    #     # Find where to place bars depending on width and number of sources
+    #     new_years = [year + width * i for year in years]
+    #     ax.bar(new_years[i],randint(1,20),width=width,color=colors[color],label=graph_info[2][i])
+
+    #     color += 1
+    #     if color > len(colors):
+    #         color = 0
 
     # Set up the labels on the graph
     plt.title("Number of references made to sources by year")
